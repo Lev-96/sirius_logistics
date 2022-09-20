@@ -1,0 +1,15 @@
+.main-navbar {}
+
+.main-navbar-container {
+   @include flex-col(space-between);
+   gap: 10px;
+}
+
+.main-navbar__link {
+   text-decoration: none;
+   color: $black-clr;
+   @include set-font(16px);
+   padding: 15px 0;
+   text-transform: uppercase;
+   text-align: center;
+}
