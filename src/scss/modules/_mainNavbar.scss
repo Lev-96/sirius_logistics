@@ -16,7 +16,7 @@
    
    &-nav{
       @include flex-col(space-between);
-      align-items: flex-end;
+      align-items: center;
       gap: 10px;
 
       @include for-tablet {
