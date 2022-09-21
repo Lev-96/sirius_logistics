@@ -1,0 +1,50 @@
+.mobile-nav {
+   position: fixed;
+   height: 100%;
+   background: $blue-clr;
+   padding: 45px 25px 25px;
+   left: -100%;
+   top: 0;
+   max-width: 300px;
+   transition: $transition;
+
+   &_active{
+      left: 0;
+   }
+   
+   &__close-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      transition: $transition;
+
+      &:hover{
+         opacity: .7;
+      }
+
+   }
+   
+   &__close-icon {
+      @include svg(30px,#fff)
+   }
+   
+   &__menu {
+      @include flex-col(flex-start, flex-start);
+      flex-direction: column;
+   }
+   
+   &__link {
+      text-decoration: none;
+      @include set-font(18px,400,#fff);
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      transition: $transition;
+
+      &_active,&:hover{
+         opacity: .7;
+      }
+   }
+}
