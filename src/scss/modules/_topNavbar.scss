@@ -88,7 +88,7 @@
 
    &__lang-dropdown {
       position: absolute;
-      left: calc(-100% + -20px);
+      left: calc(-100% + -28px);
       top: calc(100% + 5px);
       border: 1px solid #ecf0f1;
       border-radius: 10px;
@@ -110,7 +110,7 @@
    &__lang-dropcontent {
       padding: 4px 10px;
       cursor: pointer;
-      @include flex-col(flex-start);
+      @include flex-col(flex-end);
 
       &:hover {
          background-color: #ecf0f1;
@@ -125,7 +125,7 @@
    }
 
    &__lang-text {
-      margin-left: 10px;
+      margin-right: 10px;
    }
 
    &__burger-icon {
