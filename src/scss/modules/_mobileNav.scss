@@ -1,4 +1,5 @@
 .mobile-nav {
+   z-index: 999;
    position: fixed;
    height: 100%;
    background: $blue-clr;
@@ -7,6 +8,9 @@
    top: 0;
    max-width: 300px;
    transition: $transition;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 
    &_active{
       left: 0;
@@ -46,5 +50,9 @@
       &_active,&:hover{
          opacity: .7;
       }
+   }
+
+   &__footer-text{
+      @include set-font(12px,400,#fff)      
    }
 }

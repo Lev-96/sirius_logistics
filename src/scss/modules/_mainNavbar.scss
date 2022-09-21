@@ -1,5 +1,6 @@
 
 .main-navbar{
+   z-index: 999;
    @include for-min-tablet {
       display: none;
    }
@@ -16,10 +17,7 @@
    
    &-nav{
       @include flex-col(space-between);
-<<<<<<< HEAD
-=======
       align-items: center;
->>>>>>> 34a009c08b0e3ae1844c1339d5de98d457ecc3cd
       gap: 10px;
 
       @include for-tablet {
@@ -52,4 +50,6 @@
          bottom: 0   ;
       }
    }
+
+   
 }
