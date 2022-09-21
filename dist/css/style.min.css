@@ -35,14 +35,14 @@
     align-items: center;
   }
 }
-.top-navbar__icon {
-  width: 100px;
-  height: 59px;
-}
 @media (min-width: 960px) {
-  .top-navbar__icon {
+  .top-navbar__logo-link {
     margin-right: auto;
   }
+}
+.top-navbar__logo-icon {
+  width: 100px;
+  height: 59px;
 }
 .top-navbar__phone-block {
   display: flex;
