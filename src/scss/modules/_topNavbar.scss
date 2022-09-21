@@ -1,121 +1,125 @@
-.top-navbar__container {
-   @include flex-col(flex-end);
-   padding: 30px 20px 20px;
-   border-bottom: 1px solid #ecf0f1;
+.top-navbar{
 
-   @include for-tablet {
+   &__container {
+      @include flex-col(flex-end);
+      padding: 30px 20px 20px;
+   
+      @include for-tablet {
+         flex-direction: column;
+         justify-content: center;
+         gap: 20px;
+      }
+      @include for-min-tablet {
+            flex-direction: row;
+            @include flex-col(space-between);
+      }
+   }
+   
+   &__icon {
+      width: 100px;
+      height: 59px;
+   
+      @media(min-width: $tab-screen) {
+         margin-right: auto;
+   
+      }
+   }
+   
+   &__phone-block {
+      @include flex-col();
+   
+      @include for-min-tablet {
+         display: none
+      }
+   }
+   
+   &__phone-item {
+      @include flex-col();
+      padding: 0 20px;
+   
+   }
+   
+   &__phone-icon {
+      @include svg(30px);
+      margin-right: 10px;
+   }
+   
+   &__phone__texts {}
+   
+   &__phone-number {
+      @include set-font(26px, 700)
+   }
+   
+   &__phone-city {
+      @include set-font(14px)
+   }
+   
+   &__lang-block {
+      position: relative;
+   
+      @include for-min-tablet {
+         display: none
+      }
+   
+      img {
+         width: 30px;
+         height: 20px;
+         display: block;
+      }
+   
+   }
+   
+   .top-navbar__lang-dropbtn {
+      border: 2px solid $blue-clr;
+      border-radius: 10px;
+      padding: 8px 10px;
+      text-align: center;
+      cursor: pointer;
+   
+      &:hover {
+         background-color: $blue-clr;
+         transition: $transition;
+      }
+   
+   }
+   
+   
+   .top-navbar__lang-dropdown {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 5px);
+      border: 2px solid $blue-clr;
+      border-radius: 10px;
+      text-align: center;
+      @include flex-col();
       flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-   }
-   @include for-min-tablet {
-         flex-direction: row;
-         @include flex-col(space-between);
-   }
-}
-
-.top-navbar__icon {
-   width: 100px;
-   height: 59px;
-
-   @media(min-width: $tab-screen) {
-      margin-right: auto;
-
-   }
-}
-
-.top-navbar__phone-block {
-   @include flex-col();
-
-   @include for-min-tablet {
-      display: none
-   }
-}
-
-.top-navbar__phone-item {
-   @include flex-col();
-   padding: 0 20px;
-
-}
-
-.top-navbar__phone-icon {
-   @include svg(30px);
-   margin-right: 10px;
-}
-
-.top-navbar__phone__texts {}
-
-.top-navbar__phone-number {
-   @include set-font(26px, 700)
-}
-
-.top-navbar__phone-city {
-   @include set-font(14px)
-}
-
-.top-navbar__lang-block {
-   position: relative;
-
-   @include for-min-tablet {
-      display: none
-   }
-
-   img {
-      width: 30px;
-      height: 20px;
-      display: block;
-   }
-
-}
-
-.top-navbar__lang-dropbtn {
-   border: 2px solid $blue-clr;
-   border-radius: 10px;
-   padding: 8px 10px;
-   text-align: center;
-   cursor: pointer;
-
-   &:hover {
-      background-color: $blue-clr;
-      transition: $transition;
-   }
-
-}
-
-
-.top-navbar__lang-dropdown {
-   position: absolute;
-   left: 0;
-   top: calc(100% + 5px);
-   border: 2px solid $blue-clr;
-   border-radius: 10px;
-   text-align: center;
-   @include flex-col();
-   flex-direction: column;
-   display: none;
-}
-
-.top-navbar__lang-dropcontent {
-   padding: 4px 10px;
-   cursor: pointer;
-
-   &:hover {
-      background-color: $blue-clr;
-      transition: $transition;
-   }
-}
-
-.top-navbar__burger-btn {
-   cursor: pointer;
-   border: none;
-   background: transparent;
-}
-
-.top-navbar__burger-icon {
-   @include svg(28px);
-
-   @media (min-width: $min-tab-screen) {
       display: none;
+      z-index: 99;
+      background: #fff;
    }
-
+   
+   .top-navbar__lang-dropcontent {
+      padding: 4px 10px;
+      cursor: pointer;
+   
+      &:hover {
+         background-color: $blue-clr;
+         transition: $transition;
+      }
+   }
+   
+   .top-navbar__burger-btn {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+   }
+   
+   .top-navbar__burger-icon {
+      @include svg(28px);
+   
+      @media (min-width: $min-tab-screen) {
+         display: none;
+      }
+   
+   }
 }
