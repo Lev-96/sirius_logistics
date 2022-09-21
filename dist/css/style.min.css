@@ -14,8 +14,26 @@
   margin: 0 auto;
 }
 
+.big-title {
+  font: bold 45px "Roboto", Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+@media (max-width: 960px) {
+  .big-title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .big-title {
+    font-size: 24px;
+  }
+}
+
 .top-navbar {
-  background: fff;
+  background: #fff;
 }
 @media (max-width: 640px) {
   .top-navbar {
@@ -294,4 +312,46 @@
 
 body {
   height: 2000px;
+}
+
+.our-services__title {
+  font: 600 42px "Roboto", Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 960px) {
+  .our-services__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .our-services__title {
+    font-size: 20px;
+  }
+}
+
+.our-services__subtitle {
+  font: 400 18px "Roboto", Arial, sans-serif;
+  color: #000000;
+  margin: 0 auto 30px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.our-services__boxes-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.our-services__box {
+  width: calc(33.3333333333% - 20px);
+}
+
+.our-services__box-img {
+  width: 100%;
+  border-radius: 50%;
 }
