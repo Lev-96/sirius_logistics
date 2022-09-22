@@ -19,9 +19,7 @@
    <div class="top-navbar">
    <div class="top-navbar__container container">
       <a class="top-navbar__logo-link" href="index.html">
-         <svg class="top-navbar__logo-icon">
-            <use xlink:href="img/icons/sprite.svg#logo"></use>
-         </svg>
+         <img src="img/logo.png" alt="" class="top-navbar__logo-icon">
       </a>
       <div class="top-navbar__phone-block">
          <div class="top-navbar__phone-item">
@@ -75,7 +73,7 @@
       <hr class="main-navbar-border"> 
       <nav class="main-navbar-nav">
          <a href="#" class="main-navbar__link">գլխավոր</a>
-         <a href="#" class="main-navbar__link">մեր մասին</a>
+         <a href="./about.html" class="main-navbar__link">մեր մասին</a>
          <a href="#" class="main-navbar__link">ցամաքային բեռնափոխադրումներ</a>
          <a href="#" class="main-navbar__link">օդային բեռնափոխադրումներ</a>
          <a href="#" class="main-navbar__link">ծովային բեռնափոխադրումներ</a>
@@ -106,11 +104,9 @@
     <div class="header__bgImages"></div>
 </div>
 
-   <div class="container">
-      <h1 class="big-title">"Սիրիուս Լոջիստիկս" ՍՊԸ - Ձեր վստահելի գործընկերը լոգիստիկայի աշխարհում</h1>
-   </div>
    <div class="our-services">
    <div class="our-services__container container">
+      <h1 class="our-services__big-title">"Սիրիուս Լոջիստիկս" ՍՊԸ - Ձեր վստահելի գործընկերը լոգիստիկայի աշխարհում</h1>
       <h2 class="our-services__title">Մեր ծառայությունները</h2>
       <h4 class="our-services__subtitle">Սիրիուս Լոջիստիկս-ն առաջարկում է լոգիստիկ ծառայությունների լայն ընտրանի․</h4>
       <div class="our-services__boxes-wrapper">
@@ -153,6 +149,34 @@
       </div>
    </div>
 </div>
+   <footer class="footer">
+   <div class="footer__container container">
+      <div class="footer__logo-col">
+         <img src="img/logo.png" alt="" class="footer__logo-icon">
+      </div>
+      <div class="footer__map-col">
+         <div class="footer__map-box"></div>
+      </div>
+      <div class="footer__contacts-col">
+         <p class="footer__contacts-text footer__company-name">Սիրիուս Լոջիստիկս ՍՊԸ</p>
+         <p class="footer__contacts-text footer__addres-text">ՀՀ, ք․ Երևան, 0082, Բարձրաբերդի 27/1</p>
+         <p class="footer__contacts-text footer__phone-text">Հեռ։ +374․43․470․370</p>
+         <p class="footer__contacts-text footer__email-text">Էլ․ փոստ։ <a href="#">a.kareyan@siriuslogistics.am</a></p>
+         <p class="footer__contacts-text footer__work-time">Աշխ․ ժամեր։ Երկ․-Ուրբ․։ 09։00-18։00</p>
+      </div>
+      <div class="footer__form-col">
+         <form action="#" class="footer__form" id="send-mail-form">
+           <label for="name" class="footer__label">Անուն*</label>
+            <input type="text" class="footer__field footer__name-field">
+           <label for="email" class="footer__label">Էլեկտրոնային փոստի հասցե*</label>
+            <input type="email" class="footer__field footer__email-field">
+           <label for="message" class="footer__label">Հաղորդագրություն</label>
+            <textarea class="footer__message-field" ></textarea>
+            <button class="footer__submit-btn">Ուղարկել</button>
+         </form>
+      </div>
+   </div>
+</footer>
    <script src="js/app.min.js"></script>
 </body>
 
