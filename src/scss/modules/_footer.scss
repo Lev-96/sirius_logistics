@@ -1,11 +1,11 @@
 .footer {
-   background-color: #79c271;
+   background-color: #b1abab;
    padding: 35px 0;
 
 
    &__container {
       display: grid;
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       justify-content: space-between;
       align-items: center;
@@ -21,24 +21,16 @@
       }
    }
 
- 
-
-   &__logo-col {}
-
    &__logo-icon {
-      width: 150px;
-      height: 79px;
+      width: 170px;
+      height: 86px;
    }
-
-   &__map-col {}
 
    &__map-box {
       width: 250px;
       height: 250px;
       background: #ccc;
    }
-
-   &__contacts-col {}
 
    &__contacts-text {
       @include set-font(15px);
@@ -52,10 +44,6 @@
    &__email-text {
       white-space: nowrap;
    }
-
-   &__form-col {}
-
-   &__form {}
 
    &__label {
       margin-bottom: 3px;
@@ -72,12 +60,9 @@
       padding: 8px 12px;
       margin-bottom: 15px;
       max-width: 300px;
+      min-width: 180px;
       width: 100%;
    }
-
-   &__name-field {}
-
-   &__email-field {}
 
    &__message-field {
       min-height: 100px;
@@ -86,7 +71,7 @@
    &__submit-btn {
       border: none;
       cursor: pointer;
-      background: #ff6634;
+      background: $blue-clr;
       padding: 8px 12px;
       color: #fff;
       font-size: 18px;

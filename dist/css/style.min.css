@@ -19,6 +19,7 @@
   color: #000000;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 @media (max-width: 960px) {
   .title {
@@ -376,6 +377,7 @@
   max-width: 260px;
   margin: 18px auto;
   line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .info-block {
@@ -424,12 +426,12 @@
 }
 
 .footer {
-  background-color: #79c271;
+  background-color: #b1abab;
   padding: 35px 0;
 }
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: space-between;
   align-items: center;
@@ -447,8 +449,8 @@
   }
 }
 .footer__logo-icon {
-  width: 150px;
-  height: 79px;
+  width: 170px;
+  height: 86px;
 }
 .footer__map-box {
   width: 250px;
@@ -480,6 +482,7 @@
   padding: 8px 12px;
   margin-bottom: 15px;
   max-width: 300px;
+  min-width: 180px;
   width: 100%;
 }
 .footer__message-field {
@@ -488,7 +491,7 @@
 .footer__submit-btn {
   border: none;
   cursor: pointer;
-  background: #ff6634;
+  background: #3cc0f0;
   padding: 8px 12px;
   color: #fff;
   font-size: 18px;

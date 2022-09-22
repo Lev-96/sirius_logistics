@@ -48,11 +48,11 @@
                <img src="img/am-flag.png" alt="am">
             </div>
             <div class="top-navbar__lang-dropcontent">
-               <span class="top-navbar__lang-text">Ռուսերեն</span>
+               <span class="top-navbar__lang-text">Русский</span>
                <img src="img/ru-flag.png" alt="ru">
             </div>
             <div class="top-navbar__lang-dropcontent">
-               <span class="top-navbar__lang-text">Անգլերեն</span>
+               <span class="top-navbar__lang-text">English</span>
                <img src="img/en-flag.png" alt="en">
             </div>
          </div>
@@ -70,33 +70,79 @@
    <div class="main-navbar-container container">
       <hr class="main-navbar-border"> 
       <nav class="main-navbar-nav">
-         <a href="#" class="main-navbar__link">գլխավոր</a>
-         <a href="./about.html" class="main-navbar__link">մեր մասին</a>
-         <a href="#" class="main-navbar__link">ցամաքային բեռնափոխադրումներ</a>
-         <a href="#" class="main-navbar__link">օդային բեռնափոխադրումներ</a>
-         <a href="#" class="main-navbar__link">ծովային բեռնափոխադրումներ</a>
-         <a href="#" class="main-navbar__link">մաքսային ձեվակերպումներ</a>
-         <a href="#" class="main-navbar__link">կապ</a>
+         <a href="index.html" class="main-navbar__link main-navbar__link_active">գլխավոր</a>
+         <a href="about.html" class="main-navbar__link">մեր մասին</a>
+         <a href="groundFreight.html" class="main-navbar__link">ցամաքային բեռնափոխադրումներ</a>
+         <a href="airFreight.html" class="main-navbar__link">օդային բեռնափոխադրումներ</a>
+         <a href="seaFreight.html" class="main-navbar__link">ծովային բեռնափոխադրումներ</a>
+         <a href="customForms.html" class="main-navbar__link">մաքսային ձեվակերպումներ</a>
+         <a href="contact.html" class="main-navbar__link">կապ</a>
       </nav>
    </div>
 </div>
-<div class="mobile-nav">
+<div class="mobile-nav ">
    <button class="mobile-nav__close-btn">
       <svg class="mobile-nav__close-icon">
             <use xlink:href="img/icons/sprite.svg#close"></use>
       </svg>
    </button>
    <div class="mobile-nav__menu">
-      <a href="#" class="mobile-nav__link mobile-nav__link_active">գլխավոր</a>
-      <a href="#" class="mobile-nav__link">մեր մասին</a>
-      <a href="#" class="mobile-nav__link">ցամաքային բեռնափոխադրումներ</a>
-      <a href="#" class="mobile-nav__link">օդային բեռնափոխադրումներ</a>
-      <a href="#" class="mobile-nav__link">ծովային բեռնափոխադրումներ</a>
-      <a href="#" class="mobile-nav__link">մաքսային ձեվակերպումներ</a>
-      <a href="#" class="mobile-nav__link">կապ</a>
+      <a href="index.html" class="mobile-nav__link mobile-nav__link_active">գլխավոր</a>
+      <a href="about.html" class="mobile-nav__link">մեր մասին</a>
+      <a href="groundFreight.html" class="mobile-nav__link">ցամաքային բեռնափոխադրումներ</a>
+      <a href="airFreight.html" class="mobile-nav__link">օդային բեռնափոխադրումներ</a>
+      <a href="seaFreight.html" class="mobile-nav__link">ծովային բեռնափոխադրումներ</a>
+      <a href="customForms.html" class="mobile-nav__link">մաքսային ձեվակերպումներ</a>
+      <a href="contact.html" class="mobile-nav__link">կապ</a>
    </div>
 
    <p class="mobile-nav__footer-text">Sirius Logistics LLC</p>
 </div>
+   <div class="info-block">
+      <div class="info-block__container container">
+         <h1 class="info-block__title title">Մեր մասին</h1>
+         <div class="info-block__wrapper">
+            <div class="info-block__img-block">
+               <img src="img/1.jpg" alt="" class="info-block__img">
+            </div>
+            <div class="info-block_text-block">
+               <p class="info-block-text">
+                  "Սիրիուս Լոջիստիկս" ՍՊԸ-ն հիմնադրվել է 2022թ․-ին։ Ընկերության նպատակը իր հաճախորդներին որակյալ լոգիստիկ
+                  ծառայությունների
+                  մատուցումն է՝ անկախ դրանց տեսակից։
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+   <div class="footer__container container">
+      <div class="footer__logo-col">
+         <img src="img/logo.png" alt="" class="footer__logo-icon">
+      </div>
+      <div class="footer__map-col">
+         <div class="footer__map-box"></div>
+      </div>
+      <div class="footer__contacts-col">
+         <p class="footer__contacts-text footer__company-name">Սիրիուս Լոջիստիկս ՍՊԸ</p>
+         <p class="footer__contacts-text footer__addres-text">ՀՀ, ք․ Երևան, 0082, Բարձրաբերդի 27/1</p>
+         <p class="footer__contacts-text footer__phone-text">Հեռ։ +374․43․470․370</p>
+         <p class="footer__contacts-text footer__email-text">Էլ․ փոստ։ <a href="#">a.kareyan@siriuslogistics.am</a></p>
+         <p class="footer__contacts-text footer__work-time">Աշխ․ ժամեր։ Երկ․-Ուրբ․։ 09։00-18։00</p>
+      </div>
+      <div class="footer__form-col">
+         <form action="#" class="footer__form" id="send-mail-form">
+           <label for="name" class="footer__label">Անուն*</label>
+            <input type="text" class="footer__field footer__name-field">
+           <label for="email" class="footer__label">Էլ. փոստի հասցե*</label>
+            <input type="email" class="footer__field footer__email-field">
+           <label for="message" class="footer__label">Հաղորդագրություն</label>
+            <textarea class="footer__message-field" ></textarea>
+            <button class="footer__submit-btn">Ուղարկել</button>
+         </form>
+      </div>
+   </div>
+</footer>
+   <script src="js/app.min.js"></script>
 </body>
 </html>
