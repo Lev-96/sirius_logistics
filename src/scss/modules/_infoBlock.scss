@@ -1,0 +1,40 @@
+.info-block {
+   margin: 60px 0;
+}
+
+.info-block__wrapper {
+   margin-top: 50px;
+   @include flex-col();
+   gap: 20px;
+
+   @include for-tablet {
+      flex-direction: column;
+   }
+}
+
+.info-block__img-block {
+   width: 100%;
+}
+
+.info-block__img {
+   width: 100%;
+}
+
+.info-block_text-block {
+   width: 100%;
+}
+
+.info-block-text {
+   @include set-font(16px,300);
+   line-height: 1.55;
+   margin-bottom: 10px;
+}
+
+.info-block__list {
+   margin-left: 15px;
+}
+
+.info-block__list-item {
+   list-style: none;
+   margin-bottom: 15px;
+}

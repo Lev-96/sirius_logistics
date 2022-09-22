@@ -45,7 +45,8 @@
          opacity: 0;
       }
    
-      &:hover::after{
+      &:hover::after,
+      &_active::after {
          opacity: 1;
          bottom: 10px   ;
       }
