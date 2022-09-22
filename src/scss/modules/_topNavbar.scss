@@ -135,12 +135,13 @@
 
    // BURGER MENU
 
-.burgers {
+   .burgers {
 
-   @media (min-width: $min-tab-screen) {
-      display: none;
+      @media (min-width: $min-tab-screen) {
+         display: none;
+      }
    }
-}
+
    .search-mobile {
       display: block;
       position: absolute;
@@ -151,9 +152,7 @@
       a {
          display: flexbox;
          display: flex;
-         -webkit-box-pack: center;
          justify-content: center;
-         -webkit-box-align: center;
          align-items: center;
          text-align: center;
          width: 100px;
@@ -164,12 +163,8 @@
             background: url("https://yalantis.com/assets/icon-search-eb2d80fde29a4eb86770580f52872b64097df105b39901d39abcea6dbc372969.svg") no-repeat 0 0;
             width: 25px;
             height: 25px;
-            -webkit-transform: scale(1);
             transform: scale(1);
-            -webkit-transition: -webkit-transform .4s ease;
-            transition: -webkit-transform .4s ease;
             transition: transform .4s ease;
-            transition: transform .4s ease, -webkit-transform .4s ease;
          }
       }
    }
@@ -188,18 +183,12 @@
          background-color: rgba(0, 0, 0, 0.97);
          z-index: 10;
          opacity: 1;
-         -webkit-transition: opacity 0.6s linear;
          transition: opacity 0.6s linear;
 
          .header-nav__inner {
-            display: -webkit-box;
             display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
             flex-flow: row wrap;
-            -webkit-box-pack: center;
             justify-content: center;
-            -webkit-box-align: center;
             align-items: center;
             align-content: center;
             height: 100%;
@@ -272,7 +261,6 @@
          position: absolute;
          top: 50%;
          left: 50%;
-         -webkit-transform: translate(-50%, -50%);
          transform: translate(-50%, -50%);
       }
 
@@ -287,7 +275,6 @@
 
          &:nth-child(1) {
             top: 0;
-            -webkit-transition: rotate, 0.3s;
             transition: rotate, 0.3s;
          }
 
@@ -297,7 +284,6 @@
 
          &:nth-child(3) {
             top: 100%;
-            -webkit-transition: rotate, 0.3s;
             transition: rotate, 0.3s;
          }
       }
@@ -307,7 +293,6 @@
             &:nth-child(1) {
                top: 10px;
                right: 0;
-               -webkit-transform: rotate(45deg);
                transform: rotate(45deg);
             }
 
@@ -318,7 +303,6 @@
             &:nth-child(3) {
                top: 10px;
                right: 0;
-               -webkit-transform: rotate(-45deg);
                transform: rotate(-45deg);
             }
          }
