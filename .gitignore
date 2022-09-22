@@ -2,3 +2,9 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
+/dist
+=======
+
+/package-lock.json
+>>>>>>> 14cf372b75d8ecf10c1448f432f4d32a03fbd1e5

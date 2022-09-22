@@ -1,4 +1,10 @@
 .top-navbar {
+   background: #fff;
+   @include for-min-tablet {
+      position: fixed;
+      width: 100%;
+      border-bottom: 1px solid #000;
+   }
 
    &__container {
       @include flex-col(flex-end);
@@ -8,12 +14,15 @@
          flex-direction: column;
          justify-content: center;
          gap: 20px;
-      }
+      };
 
       @include for-min-tablet {
          flex-direction: row;
          @include flex-col(space-between);
+         padding: 20px;
+
       }
+    
    }
 
    &__logo-link {
@@ -25,8 +34,6 @@
    &__logo-icon {
       width: 100px;
       height: 59px;
-
-
    }
 
    &__phone-block {
@@ -88,29 +95,34 @@
 
    &__lang-dropdown {
       position: absolute;
-      left: calc(-100% + -20px);
+      left: calc(-100% + -28px);
       top: calc(100% + 5px);
       border: 1px solid #ecf0f1;
       border-radius: 10px;
       text-align: center;
       @include flex-col(center,stretch);
       flex-direction: column;
-      // display: none;
+      display: none;
       z-index: 99;
       background: #fff;
       padding: 10px 0;
 
-
       @include for-tablet{
          left: 0;
          transform: translateX(-25%);
+      }
+
+      
+      
+      &_active{
+         display: block;
       }
    }
 
    &__lang-dropcontent {
       padding: 4px 10px;
       cursor: pointer;
-      @include flex-col(flex-start);
+      @include flex-col(flex-end);
 
       &:hover {
          background-color: #ecf0f1;
@@ -125,7 +137,7 @@
    }
 
    &__lang-text {
-      margin-left: 10px;
+      margin-right: 10px;
    }
 
    &__burger-icon {

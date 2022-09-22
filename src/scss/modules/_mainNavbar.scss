@@ -1,5 +1,6 @@
 
 .main-navbar{
+   z-index: 999;
    @include for-min-tablet {
       display: none;
    }
@@ -16,15 +17,12 @@
    
    &-nav{
       @include flex-col(space-between);
-      align-items: flex-end;
+      align-items: center;
       gap: 10px;
 
       @include for-tablet {
          flex-direction: column;
-         align-items: center;
       }
-
-      
    }
    
    &__link {
@@ -41,15 +39,17 @@
          position: absolute;
          left: 0;
          width: 100%;
-         border-bottom: 2px solid $blue-clr;
-         bottom: 5px;
+         border-bottom: 3px solid $blue-clr;
+         bottom: 15px;
          transition: $transition;
          opacity: 0;
       }
    
       &:hover::after{
          opacity: 1;
-         bottom: 0   ;
+         bottom: 10px   ;
       }
    }
+
+   
 }
