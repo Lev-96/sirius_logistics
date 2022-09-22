@@ -173,13 +173,14 @@
     display: none;
   }
 }
-.top-navbar .burgers .search-mobile {
+.top-navbar .search-mobile {
+  display: block;
   position: absolute;
   top: -5px;
   right: 50px;
   z-index: 6;
 }
-.top-navbar .burgers .search-mobile a {
+.top-navbar .search-mobile a {
   display: flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -191,7 +192,7 @@
   height: 60px;
   position: relative;
 }
-.top-navbar .burgers .search-mobile a .icon_search {
+.top-navbar .search-mobile a .icon_search {
   background: url("https://yalantis.com/assets/icon-search-eb2d80fde29a4eb86770580f52872b64097df105b39901d39abcea6dbc372969.svg") no-repeat 0 0;
   width: 25px;
   height: 25px;
@@ -202,11 +203,11 @@
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
-.top-navbar .burgers .header-nav {
+.top-navbar .header-nav {
   order: 2;
   display: none;
 }
-.top-navbar .burgers .header-nav.active {
+.top-navbar .header-nav.active {
   display: block;
   position: fixed;
   top: 0;
@@ -219,7 +220,7 @@
   -webkit-transition: opacity 0.6s linear;
   transition: opacity 0.6s linear;
 }
-.top-navbar .burgers .header-nav.active .header-nav__inner {
+.top-navbar .header-nav.active .header-nav__inner {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -233,25 +234,25 @@
   height: 100%;
   overflow: auto;
 }
-.top-navbar .burgers nav.active ul {
+.top-navbar nav.active ul {
   width: 100%;
   text-align: center;
   padding: 0;
   overflow: hidden;
   display: block;
 }
-.top-navbar .burgers nav.active ul li {
+.top-navbar nav.active ul li {
   padding: 10px 0;
 }
-.top-navbar .burgers nav ul {
+.top-navbar nav ul {
   padding: 8px 0 0 0;
   display: flex;
 }
-.top-navbar .burgers nav ul li {
+.top-navbar nav ul li {
   padding: 0 0 0 13px;
   list-style: none;
 }
-.top-navbar .burgers nav ul li a {
+.top-navbar nav ul li a {
   display: inline-block;
   font-family: "BrandonText", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -264,11 +265,11 @@
   text-decoration: none;
   transition: color 0.5s ease-in-out;
 }
-.top-navbar .burgers nav ul li a:hover {
+.top-navbar nav ul li a:hover {
   color: #3cc0f0;
   transition: color 0.3s ease-in-out;
 }
-.top-navbar .burgers .device-menu {
+.top-navbar .device-menu {
   position: relative;
   top: 0;
   right: 0;
@@ -281,7 +282,7 @@
   height: 40px;
   display: block;
 }
-.top-navbar .burgers .device-menu .device-menu__inner {
+.top-navbar .device-menu .device-menu__inner {
   width: 24px;
   height: 18px;
   position: absolute;
@@ -290,7 +291,7 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.top-navbar .burgers .device-menu span {
+.top-navbar .device-menu span {
   position: absolute;
   width: 100%;
   height: 3px;
@@ -299,29 +300,29 @@
   top: 5px;
   left: 0;
 }
-.top-navbar .burgers .device-menu span:nth-child(1) {
+.top-navbar .device-menu span:nth-child(1) {
   top: 0;
   -webkit-transition: rotate, 0.3s;
   transition: rotate, 0.3s;
 }
-.top-navbar .burgers .device-menu span:nth-child(2) {
+.top-navbar .device-menu span:nth-child(2) {
   top: 50%;
 }
-.top-navbar .burgers .device-menu span:nth-child(3) {
+.top-navbar .device-menu span:nth-child(3) {
   top: 100%;
   -webkit-transition: rotate, 0.3s;
   transition: rotate, 0.3s;
 }
-.top-navbar .burgers .device-menu.open span:nth-child(1) {
+.top-navbar .device-menu.open span:nth-child(1) {
   top: 10px;
   right: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.top-navbar .burgers .device-menu.open span:nth-child(2) {
+.top-navbar .device-menu.open span:nth-child(2) {
   opacity: 0;
 }
-.top-navbar .burgers .device-menu.open span:nth-child(3) {
+.top-navbar .device-menu.open span:nth-child(3) {
   top: 10px;
   right: 0;
   -webkit-transform: rotate(-45deg);
