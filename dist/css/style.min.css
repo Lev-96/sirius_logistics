@@ -369,6 +369,7 @@
   max-width: 200px;
   min-height: 200px;
   display: block;
+  box-shadow: 0 0 6px 4px #3cc0f0;
 }
 .our-services__box-text {
   font: 600 18px "Roboto", Arial, sans-serif;
@@ -501,4 +502,8 @@
   .footer__submit-btn {
     margin: 0 auto;
   }
+}
+.footer__maps {
+  width: 300px;
+  height: 300px;
 }
