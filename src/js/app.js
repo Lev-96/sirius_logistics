@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
 
 
 const activeNavLinks = function (linkClass) {
+  console.log("aa");
   const mainNavLinks = document.querySelectorAll(linkClass)
   const pageHref = window.location.href
   const activeClass = linkClass.slice(1) + '_active'
