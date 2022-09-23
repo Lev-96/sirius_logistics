@@ -169,151 +169,6 @@
   background-color: #ecf0f1;
   transition: all 0.5s;
 }
-@media (min-width: 640px) {
-  .top-navbar .burgers {
-    display: none;
-  }
-}
-.top-navbar .search-mobile {
-  display: block;
-  position: absolute;
-  top: -5px;
-  right: 50px;
-  z-index: 6;
-}
-.top-navbar .search-mobile a {
-  display: flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100px;
-  height: 60px;
-  position: relative;
-}
-.top-navbar .search-mobile a .icon_search {
-  background: url("https://yalantis.com/assets/icon-search-eb2d80fde29a4eb86770580f52872b64097df105b39901d39abcea6dbc372969.svg") no-repeat 0 0;
-  width: 25px;
-  height: 25px;
-  transform: scale(1);
-  transition: transform 0.4s ease;
-}
-.top-navbar .header-nav {
-  order: 2;
-  display: none;
-}
-.top-navbar .header-nav.active {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.97);
-  z-index: 10;
-  opacity: 1;
-  transition: opacity 0.6s linear;
-}
-.top-navbar .header-nav.active .header-nav__inner {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  overflow: auto;
-}
-.top-navbar nav.active ul {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  overflow: hidden;
-  display: block;
-}
-.top-navbar nav.active ul li {
-  padding: 10px 0;
-}
-.top-navbar nav ul {
-  padding: 8px 0 0 0;
-  display: flex;
-}
-.top-navbar nav ul li {
-  padding: 0 0 0 13px;
-  list-style: none;
-}
-.top-navbar nav ul li a {
-  display: inline-block;
-  font-family: "BrandonText", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  color: white;
-  text-transform: uppercase;
-  padding: 5px 8px;
-  letter-spacing: 0.9px;
-  position: relative;
-  text-decoration: none;
-  transition: color 0.5s ease-in-out;
-}
-.top-navbar nav ul li a:hover, .top-navbar nav ul li a_active {
-  color: #3cc0f0;
-  transition: color 0.3s ease-in-out;
-}
-.top-navbar .device-menu {
-  position: relative;
-  top: 0;
-  right: 0;
-  border-radius: 4px;
-  width: 55px;
-  height: 50px;
-  z-index: 11;
-  background-color: #3cc0f0;
-  width: 45px;
-  height: 40px;
-  display: block;
-  border: none;
-  cursor: pointer;
-}
-.top-navbar .device-menu .device-menu__inner {
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.top-navbar .device-menu span {
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  left: 0;
-  background-color: white;
-  top: 5px;
-  left: 0;
-}
-.top-navbar .device-menu span:nth-child(1) {
-  top: 0;
-  transition: rotate, 0.3s;
-}
-.top-navbar .device-menu span:nth-child(2) {
-  top: 50%;
-}
-.top-navbar .device-menu span:nth-child(3) {
-  top: 100%;
-  transition: rotate, 0.3s;
-}
-.top-navbar .device-menu.open span:nth-child(1) {
-  top: 10px;
-  right: 0;
-  transform: rotate(45deg);
-}
-.top-navbar .device-menu.open span:nth-child(2) {
-  opacity: 0;
-}
-.top-navbar .device-menu.open span:nth-child(3) {
-  top: 10px;
-  right: 0;
-  transform: rotate(-45deg);
-}
 
 .main-navbar {
   z-index: 999;
@@ -371,61 +226,107 @@
   bottom: 10px;
 }
 
-.mobile-nav {
-  z-index: 999;
+.burger-menu {
+  order: 2;
+  display: none;
+}
+.burger-menu.active {
+  display: block;
   position: fixed;
-  height: 100%;
-  background: #3cc0f0;
-  padding: 45px 25px 25px;
-  left: -100%;
   top: 0;
-  max-width: 300px;
-  transition: all 0.5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.mobile-nav_active {
   left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.97);
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.6s linear;
 }
-.mobile-nav__close-btn {
-  background: transparent;
+.burger-menu__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.burger-menu__link {
+  font-family: "BrandonText", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 57px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  letter-spacing: 0.9px;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+.burger-menu__link:hover, .burger-menu__link_active {
+  color: #3cc0f0;
+  transition: color 0.3s ease-in-out;
+}
+
+.burgers-btn {
+  position: relative;
+  top: 0;
+  right: 0;
+  border-radius: 4px;
+  width: 55px;
+  height: 50px;
+  z-index: 11;
+  background-color: #3cc0f0;
+  width: 45px;
+  height: 40px;
+  display: block;
   border: none;
   cursor: pointer;
+}
+@media (min-width: 640px) {
+  .burgers-btn {
+    display: none;
+  }
+}
+.burgers-btn__inner {
+  width: 24px;
+  height: 18px;
   position: absolute;
-  right: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burgers-btn__span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background-color: #fff;
+  top: 5px;
+  left: 0;
+}
+.burgers-btn__span:nth-child(1) {
+  top: 0;
+  transition: rotate, 0.3s;
+}
+.burgers-btn__span:nth-child(2) {
+  top: 50%;
+}
+.burgers-btn__span:nth-child(3) {
+  top: 100%;
+  transition: rotate, 0.3s;
+}
+.burgers-btn.open span:nth-child(1) {
   top: 10px;
-  transition: all 0.5s;
+  right: 0;
+  transform: rotate(45deg);
 }
-.mobile-nav__close-btn:hover {
-  opacity: 0.7;
+.burgers-btn.open span:nth-child(2) {
+  opacity: 0;
 }
-.mobile-nav__close-icon {
-  width: 30px;
-  height: 30px;
-  fill: #fff;
-  transition: all 0.5s;
-}
-.mobile-nav__menu {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.mobile-nav__link {
-  text-decoration: none;
-  font: 400 18px "Roboto", Arial, sans-serif;
-  color: #fff;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  transition: all 0.5s;
-}
-.mobile-nav__link_active, .mobile-nav__link:hover {
-  opacity: 0.7;
-}
-.mobile-nav__footer-text {
-  font: 400 12px "Roboto", Arial, sans-serif;
-  color: #fff;
+.burgers-btn.open span:nth-child(3) {
+  top: 10px;
+  right: 0;
+  transform: rotate(-45deg);
 }
 
 .header {

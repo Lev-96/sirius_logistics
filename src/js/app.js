@@ -33,8 +33,8 @@ const activeNavLinks = function (linkClass) {
 
 /*************** BURGER MENU **************************/
 
-const openMobileMenuBtn = document.querySelector(".device-menu");
-const headerMenu = document.querySelector(".header-nav");
+const openMobileMenuBtn = document.querySelector(".burgers-btn");
+const headerMenu = document.querySelector(".burger-menu");
 
 openMobileMenuBtn.addEventListener("click", () => {
   if (openMobileMenuBtn.classList.contains("open")) {
