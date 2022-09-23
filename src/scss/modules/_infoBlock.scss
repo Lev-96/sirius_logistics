@@ -1,15 +1,16 @@
 .info-block {
    margin: 60px 0;
-   
+
    &__wrapper {
       margin-top: 50px;
       @include flex-col();
       gap: 20px;
-   
+
       @include for-tablet {
          flex-direction: column;
       }
    }
+
 
    &__line {
       width: 150px;

@@ -1,0 +1,16 @@
+.contacts-text {
+   @include set-font(13px);
+   margin-bottom: 15px;
+
+   @include for-min-tablet {
+      text-align: center;
+   }
+}
+
+.email-text {
+   white-space: nowrap;
+}
+
+.email-link {
+   color: #18546a;
+}
