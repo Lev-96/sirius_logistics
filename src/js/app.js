@@ -2,21 +2,35 @@ import * as flsFunctions from "./modules/testWebp.js"
 flsFunctions.isWebp()
 
 
-//? page replacing
 
 window.addEventListener("load", () => {
-  const mainNavLinks = document.querySelectorAll('.main-navbar__link')
+  activeNavLinks('.main-navbar__link')
+  activeNavLinks('.header-menu-item')
+})
+
+//? page replacing
+
+
+const activeNavLinks = function (linkClass) {
+  const mainNavLinks = document.querySelectorAll(linkClass)
+  console.log(mainNavLinks)
   const pageHref = window.location.href
-  console.log(mainNavLinks);
+  const activeClass = linkClass.slice(1) + '_active'
+
   mainNavLinks.forEach(item => {
-    item.classList.remove('main-navbar__link_active')
+    item.classList.remove(activeClass)
   })
   mainNavLinks.forEach(item => {
     if (pageHref.includes(item.href)) {
-      item.classList.add('main-navbar__link_active')
-    }
+      item.classList.add(activeClass)
+    } 
+    
   })
-})
+  if(!pageHref.includes('html')){
+    mainNavLinks[0].classList.add(activeClass)
+  }
+}
+
 
 /*************** BURGER MENU **************************/ 
 

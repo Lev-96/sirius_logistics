@@ -136,7 +136,6 @@
    // BURGER MENU
 
    .burgers {
-
       @media (min-width: $min-tab-screen) {
          display: none;
       }
@@ -233,7 +232,8 @@
                text-decoration: none;
                transition: color .5s ease-in-out;
 
-               &:hover {
+               &:hover,
+               &_active {
                   color: #3cc0f0;
                   transition: color .3s ease-in-out;
                }
@@ -254,6 +254,8 @@
       width: 45px;
       height: 40px;
       display: block;
+      border: none;
+      cursor: pointer;
 
       .device-menu__inner {
          width: 24px;
