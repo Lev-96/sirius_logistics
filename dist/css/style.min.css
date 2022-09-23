@@ -510,7 +510,6 @@
 .info-block {
   margin: 60px 0;
 }
-
 .info-block__wrapper {
   margin-top: 50px;
   display: flex;
@@ -523,33 +522,38 @@
     flex-direction: column;
   }
 }
-
 .info-block__img-block {
   width: 100%;
 }
-
 .info-block__img {
   width: 100%;
 }
-
 .info-block_text-block {
   width: 100%;
 }
-
+@media (max-width: 960px) {
+  .info-block_text-block {
+    width: auto;
+  }
+}
 .info-block-text {
   font: 300 16px "Roboto", Arial, sans-serif;
   color: #000000;
   line-height: 1.55;
   margin-bottom: 10px;
 }
-
 .info-block__list {
   margin-left: 15px;
 }
-
 .info-block__list-item {
   list-style: none;
   margin-bottom: 15px;
+}
+.info-block__line {
+  border: none;
+  border-bottom: 2px solid #3cc0f0;
+  margin: 20px 0;
+  max-width: 200px;
 }
 
 .footer {
@@ -559,7 +563,7 @@
 .footer__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -579,43 +583,63 @@
   width: 170px;
   height: 86px;
 }
-.footer__map-box {
-  width: 250px;
-  height: 250px;
-  background: #ccc;
+.footer__maps {
+  width: 300px;
+  height: 300px;
 }
-.footer__contacts-text {
-  font: 400 15px "Roboto", Arial, sans-serif;
+
+.map-box {
+  width: 300px;
+  height: 300px;
+}
+
+.contacts-text {
+  font: 400 13px "Roboto", Arial, sans-serif;
   color: #000000;
   margin-bottom: 15px;
 }
 @media (max-width: 640px) {
-  .footer__contacts-text {
+  .contacts-text {
     text-align: center;
   }
 }
-.footer__email-text {
+
+.email-text {
   white-space: nowrap;
 }
-.footer__label {
+
+.email-link {
+  color: #18546a;
+}
+
+.label {
   margin-bottom: 3px;
   font-size: 15px;
   display: block;
 }
-.footer__field, .footer__message-field {
+
+.field,
+.message-field {
   display: block;
-  border: none;
   background: #fff;
   padding: 8px 12px;
   margin-bottom: 15px;
   max-width: 300px;
   min-width: 180px;
   width: 100%;
+  border: 1px solid #b1abab;
+  outline: none;
 }
-.footer__message-field {
+.field:focus,
+.message-field:focus {
+  border: 1px solid #3cc0f0;
+}
+
+.message-field {
   min-height: 100px;
 }
-.footer__submit-btn {
+
+.submit-btn {
   border: none;
   cursor: pointer;
   background: #3cc0f0;
@@ -625,11 +649,7 @@
   display: block;
 }
 @media (max-width: 640px) {
-  .footer__submit-btn {
+  .submit-btn {
     margin: 0 auto;
   }
-}
-.footer__maps {
-  width: 300px;
-  height: 300px;
 }
