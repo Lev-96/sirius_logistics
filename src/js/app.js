@@ -5,8 +5,17 @@ flsFunctions.isWebp()
 //? page replacing
 
 window.addEventListener("load", () => {
+  const mainNavLinks = document.querySelectorAll('.main-navbar__link')
   const pageHref = window.location.href
-  console.log(pageHref);
+  console.log(mainNavLinks);
+  mainNavLinks.forEach(item => {
+    item.classList.remove('main-navbar__link_active')
+  })
+  mainNavLinks.forEach(item => {
+    if (pageHref.includes(item.href)) {
+      item.classList.add('main-navbar__link_active')
+    }
+  })
 })
 
 /*************** BURGER MENU **************************/ 
