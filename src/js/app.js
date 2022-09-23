@@ -5,14 +5,13 @@ flsFunctions.isWebp()
 
 window.addEventListener("load", () => {
   activeNavLinks('.main-navbar__link')
-  activeNavLinks('.mobile-nav__link')
+  activeNavLinks('.header-menu-item')
 })
 
 //? page replacing
 
 
 const activeNavLinks = function (linkClass) {
-  console.log("aa");
   const mainNavLinks = document.querySelectorAll(linkClass)
   const pageHref = window.location.href
   const activeClass = linkClass.slice(1) + '_active'
@@ -21,14 +20,14 @@ const activeNavLinks = function (linkClass) {
     item.classList.remove(activeClass)
   })
   mainNavLinks.forEach(item => {
-    debugger;
     if (pageHref.includes(item.href)) {
       item.classList.add(activeClass)
-    }
-    else {
-      mainNavLinks[0].classList.add(activeClass)
-    }
+    } 
+    
   })
+  if(!pageHref.includes('html')){
+    mainNavLinks[0].classList.add(activeClass)
+  }
 }
 
 
