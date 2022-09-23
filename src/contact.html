@@ -11,15 +11,16 @@
             <div class="info-block__img-block">
                <img src="@img/1.jpg" alt="" class="info-block__img">
             </div>
-            <div class="info-block_text-block contact-text-block">
-               @@include('./html/components/contactText.html'{})
+
+            <div class="info-block__text-block">
+               @@include('./html/components/contactTexts.html'{})
                <hr class="info-block__line">
-               @@include('./html/components/sendMailForm.html'{})
+               @@include('./html/components/mailSendForm.html'{})
             </div>
          </div>
       </div>
    </div>
-   @@include('./html/components/footer.html'{})
+   @@include('./html/components/contactFooter.html'{})
    <script src="js/app.min.js"></script>
 
 </body>

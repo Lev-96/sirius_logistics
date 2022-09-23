@@ -26,9 +26,14 @@
       height: 86px;
    }
 
-   
-   &__maps{
-      width: 300px;
-      height: 300px;
+
+}
+
+.contact-footer__container{
+   @include flex-col(space-around);
+   gap: 15px;
+
+   @include for-min-tablet {
+      flex-direction: column;
    }
 }

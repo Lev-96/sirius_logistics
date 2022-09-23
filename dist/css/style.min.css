@@ -113,7 +113,7 @@
 }
 @media (max-width: 640px) {
   .top-navbar__lang-block {
-    display: none;
+    margin-left: auto;
   }
 }
 .top-navbar__lang-block img {
@@ -522,17 +522,34 @@
     flex-direction: column;
   }
 }
+<<<<<<< HEAD
+=======
+.info-block__line {
+  width: 150px;
+  margin: 25px 0;
+  border-top: 0;
+  border-bottom: 1px solid #3cc0f0;
+}
+>>>>>>> garik
 .info-block__img-block {
   width: 100%;
 }
 .info-block__img {
   width: 100%;
 }
+<<<<<<< HEAD
 .info-block_text-block {
   width: 100%;
 }
 @media (max-width: 960px) {
   .info-block_text-block {
+=======
+.info-block__text-block {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .info-block__text-block {
+>>>>>>> garik
     width: auto;
   }
 }
@@ -583,6 +600,7 @@
   width: 170px;
   height: 86px;
 }
+<<<<<<< HEAD
 .footer__maps {
   width: 300px;
   height: 300px;
@@ -612,6 +630,27 @@
   color: #18546a;
 }
 
+=======
+
+.contact-footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 640px) {
+  .contact-footer__container {
+    flex-direction: column;
+  }
+}
+
+.map-box {
+  width: 300px;
+  height: 300px;
+  background: #ccc;
+}
+
+>>>>>>> garik
 .label {
   margin-bottom: 3px;
   font-size: 15px;
@@ -621,13 +660,20 @@
 .field,
 .message-field {
   display: block;
+<<<<<<< HEAD
+=======
+  border: 1px solid #b1abab;
+>>>>>>> garik
   background: #fff;
   padding: 8px 12px;
   margin-bottom: 15px;
   max-width: 300px;
   min-width: 180px;
   width: 100%;
+<<<<<<< HEAD
   border: 1px solid #b1abab;
+=======
+>>>>>>> garik
   outline: none;
 }
 .field:focus,
@@ -652,4 +698,26 @@
   .submit-btn {
     margin: 0 auto;
   }
+<<<<<<< HEAD
+=======
+}
+
+.contacts-text {
+  font: 400 13px "Roboto", Arial, sans-serif;
+  color: #000000;
+  margin-bottom: 15px;
+}
+@media (max-width: 640px) {
+  .contacts-text {
+    text-align: center;
+  }
+}
+
+.email-text {
+  white-space: nowrap;
+}
+
+.email-link {
+  color: #124558;
+>>>>>>> garik
 }

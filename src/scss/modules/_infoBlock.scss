@@ -11,42 +11,42 @@
       }
    }
 
+
+   &__line {
+      width: 150px;
+      margin: 25px 0;
+      border-top: 0;
+      border-bottom: 1px solid $blue-clr;
+   }
+   
    &__img-block {
       width: 100%;
    }
-
+   
    &__img {
       width: 100%;
    }
-
-   &_text-block {
+   
+   &__text-block {
       width: 100%;
 
       @include for-tablet {
-         width: auto;
+         width: auto
       }
    }
-
+   
    &-text {
-      @include set-font(16px, 300);
+      @include set-font(16px,300);
       line-height: 1.55;
       margin-bottom: 10px;
    }
-
+   
    &__list {
       margin-left: 15px;
    }
-
+   
    &__list-item {
       list-style: none;
       margin-bottom: 15px;
    }
-
-   &__line{
-      border: none;
-      border-bottom: 2px solid $blue-clr;
-      margin: 20px 0;
-      max-width: 200px;
-   }
 }
-
