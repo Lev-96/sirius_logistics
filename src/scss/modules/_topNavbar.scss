@@ -126,6 +126,7 @@
       padding: 4px 10px;
       cursor: pointer;
       @include flex-col(flex-end);
+      gap: 10px;
 
       &:hover {
          background-color: #ecf0f1;
