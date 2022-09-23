@@ -1,12 +1,12 @@
 .footer {
-   background-color: #b1abab;
+   background-color: $grey-clr;
    padding: 35px 0;
 
 
    &__container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 15px;
       justify-content: space-between;
       align-items: center;
 
@@ -26,63 +26,13 @@
       height: 86px;
    }
 
-   &__map-box {
-      width: 250px;
-      height: 250px;
-      background: #ccc;
-   }
+}
 
-   &__contacts-text {
-      @include set-font(15px);
-      margin-bottom: 15px;
+.contact-footer__container{
+   @include flex-col(space-around);
+   gap: 15px;
 
-      @include for-min-tablet {
-         text-align: center;
-      }
-   }
-
-   &__email-text {
-      white-space: nowrap;
-   }
-
-   &__label {
-      margin-bottom: 3px;
-      font-size: 15px;
-      display: block;
-
-   }
-
-   &__field,
-   &__message-field {
-      display: block;
-      border: none;
-      background: #fff;
-      padding: 8px 12px;
-      margin-bottom: 15px;
-      max-width: 300px;
-      min-width: 180px;
-      width: 100%;
-   }
-
-   &__message-field {
-      min-height: 100px;
-   }
-
-   &__submit-btn {
-      border: none;
-      cursor: pointer;
-      background: $blue-clr;
-      padding: 8px 12px;
-      color: #fff;
-      font-size: 18px;
-      display: block;
-
-      @include for-min-tablet {
-         margin: 0 auto;
-      }
-   }
-   &__maps{
-      width: 300px;
-      height: 300px;
+   @include for-min-tablet {
+      flex-direction: column;
    }
 }

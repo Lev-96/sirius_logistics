@@ -1,0 +1,41 @@
+.label {
+   margin-bottom: 3px;
+   font-size: 15px;
+   display: block;
+
+}
+
+.field,
+.message-field {
+   display: block;
+   border: 1px solid $grey-clr;
+   background: #fff;
+   padding: 8px 12px;
+   margin-bottom: 15px;
+   max-width: 300px;
+   min-width: 180px;
+   width: 100%;
+   outline: none;
+
+   &:focus {
+      border: 1px solid $blue-clr;
+   }
+}
+
+.message-field {
+   min-height: 100px;
+}
+
+.submit-btn {
+   border: none;
+   cursor: pointer;
+   background: $blue-clr;
+   padding: 8px 12px;
+   color: #fff;
+   font-size: 18px;
+   display: block;
+
+   @include for-min-tablet {
+      margin: 0 auto;
+   }
+}
