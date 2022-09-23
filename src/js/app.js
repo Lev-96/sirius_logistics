@@ -13,6 +13,7 @@ window.addEventListener("load", () => {
 
 const activeNavLinks = function (linkClass) {
   const mainNavLinks = document.querySelectorAll(linkClass)
+  console.log(mainNavLinks)
   const pageHref = window.location.href
   const activeClass = linkClass.slice(1) + '_active'
 
