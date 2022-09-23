@@ -2,12 +2,34 @@ import * as flsFunctions from "./modules/testWebp.js"
 flsFunctions.isWebp()
 
 
-//? page replacing
 
 window.addEventListener("load", () => {
-  const pageHref = window.location.href
-  console.log(pageHref);
+  activeNavLinks('.main-navbar__link')
+  activeNavLinks('.mobile-nav__link')
 })
+
+//? page replacing
+
+
+const activeNavLinks = function (linkClass) {
+  const mainNavLinks = document.querySelectorAll(linkClass)
+  const pageHref = window.location.href
+  const activeClass = linkClass.slice(1) + '_active'
+
+  mainNavLinks.forEach(item => {
+    item.classList.remove(activeClass)
+  })
+  mainNavLinks.forEach(item => {
+    debugger;
+    if (pageHref.includes(item.href)) {
+      item.classList.add(activeClass)
+    }
+    else {
+      mainNavLinks[0].classList.add(activeClass)
+    }
+  })
+}
+
 
 /*************** BURGER MENU **************************/ 
 
