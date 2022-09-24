@@ -1,9 +1,9 @@
-<form action="#" class="form" id="send-mail-form">
+<form action="../../../send_mail.php" name="form" class="form" id="send-mail-form" method="post">
    <label for="name" class="label">Անուն*</label>
-   <input type="text" class="field name-field">
+   <input type="text" name="user_name" class="field name-field">
    <label for="email" class="label">Էլ. փոստի հասցե*</label>
-   <input type="email" class="field email-field">
+   <input type="email" name="user_email" class="field email-field">
    <label for="message" class="label">Հաղորդագրություն</label>
    <textarea class="message-field"></textarea>
-   <button class="submit-btn">Ուղարկել</button>
+   <button type="submit" class="submit-btn">Ուղարկել</button>
 </form>
