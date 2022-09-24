@@ -7,9 +7,10 @@ import { activeNavLinks } from './modules/activeNavLinks.js'
 flsFunctions.isWebp();
 
 // make active nav links function
-
-activeNavLinks('.main-navbar__link');
-activeNavLinks('.header-menu-item');
+window.addEventListener('DOMContentLoaded',() => {
+  activeNavLinks('.main-navbar__link');
+  activeNavLinks('.burger-menu__link');
+})
 
 /*************** BURGER MENU **************************/
 
@@ -27,9 +28,41 @@ openMobileMenuBtn.addEventListener('click', () => {
 });
 
 // translate
-
 translate()
+// ***************
 
+const form = document.querySelector('#send-mail-form'),
+      inputs = form.querySelectorAll('.field,.message-field'),
+      nameInp = form.querySelector('#name'),
+      emailInp = form.querySelector('#name'),
+      messageInp = form.querySelector('#name'),
+      formData = {}
+
+inputs.forEach(inp => {
+  inp.addEventListener('input', (e) => {
+    formData[e.target.name] = e.target.value
+  })
+})
+
+form.addEventListener('submit', e => {
+  sendToMail(e)
+})
+
+const sendToMail = async function (e) {
+  e.preventDefault();
+  let response = await fetch('php/sendMail.php', {
+    method: 'POST',
+    body: formData
+  });
+  if (response.ok) {
+    let result = await response.json();
+    alert(result.message);
+    formPreview.innerHTML = '';
+    form.reset();
+  } else {
+    alert("Ошибка");
+  }
+}
 
 // // Send messenge to gmail
 
@@ -48,9 +81,7 @@ translate()
 // form.addEventListener("input", inputHandler);
 // form.addEventListener("submit", formCheck);
 
-// function inputHandler({
-//   target
-// }) {
+// function inputHandler({target}) {
 //   if (target.hasAttribute("data-reg")) {
 //     inputCheck(target);
 //   }
