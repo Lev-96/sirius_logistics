@@ -11,7 +11,7 @@ global.app = {
 }
 
 
-import { copy } from "./gulp/tasks/copy.js"
+import { php } from "./gulp/tasks/php.js"
 import { reset } from "./gulp/tasks/reset.js"
 import { html } from "./gulp/tasks/html.js"
 import { scss } from "./gulp/tasks/scss.js"
@@ -24,7 +24,7 @@ import { zip } from "./gulp/tasks/zip.js"
 
 
 const watcher = function() {
-   gulp.watch(app.path.watch.files,copy)
+   gulp.watch(app.path.watch.php,php)
    gulp.watch(app.path.watch.html, html)
    gulp.watch(app.path.watch.scss, scss)
    gulp.watch(app.path.watch.js, js)
@@ -34,7 +34,7 @@ const watcher = function() {
 
 }
 
-const mainTasks = gulp.parallel(copy, html, scss, js, images, spriteSvg)
+const mainTasks = gulp.parallel(php, html, scss, js, images, spriteSvg)
 
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))

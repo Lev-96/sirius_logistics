@@ -11,10 +11,7 @@ export const html = () => {
             message: 'Error, <%= error.message %>'
          })
       ))
-      .pipe(fileInclude({
-         prefix: '@@',
-         basepath: '@file'
-      }))
+      .pipe(fileInclude())
       .pipe(app.plugins.replace(/@img\//g,'img/'))
       .pipe(app.plugins.if(
          app.isBuild,
@@ -40,3 +37,8 @@ export const html = () => {
       .pipe(app.plugins.browsersync.stream())
 
 }
+
+
+
+
+// 
