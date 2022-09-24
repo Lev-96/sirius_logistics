@@ -170,7 +170,7 @@ export const translate = function () {
    getAllItems(window.location.hash.slice(1).slice(0, 2))
 
 
-   // language dropdown functions
+   // Language dropdown functions
 
 
 
