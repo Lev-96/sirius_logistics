@@ -24,7 +24,6 @@ import { zip } from "./gulp/tasks/zip.js"
 
 
 const watcher = function() {
-   gulp.watch(app.path.watch.php,php)
    gulp.watch(app.path.watch.html, html)
    gulp.watch(app.path.watch.scss, scss)
    gulp.watch(app.path.watch.js, js)
