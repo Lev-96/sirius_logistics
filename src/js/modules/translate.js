@@ -39,7 +39,7 @@ export const translate = function () {
             en: 'CONTACT',
          },
          'main-big-title': {
-            am: '"Սիրիուս Լոջիստիկս" ՍՊԸ - Ձեր վստահելի գործընկերը լոգիստիկայի աշխարհում',
+            am: '«Սիրիուս Լոջիստիկս» ՍՊԸ - Ձեր վստահելի գործընկերը լոգիստիկայի աշխարհում',
             ru: 'ООО "Сириус Лоджистикс" - Ваш надежный партнер в мире логистики',
             en: '"Sirius Logistics" LLC - Your reliable partner in the world of logistics',
          },
@@ -69,14 +69,10 @@ export const translate = function () {
             am: 'ՀՀ, ք․ Երևան, 0082, Բարձրաբերդի 27/1',
             ru: 'РА,Ереван, 0082, ул. Бардзраберд 27/1',
             en: 'RA, Yerevan, 0082, Bardzraberd str. 27/1',
-         },'phone1': {
-            am: 'Հեռ։ +374․43․470․370',
-            ru: 'Тел. +374.43.470.370',
-            en: 'Tel. +374.77.788.080',
-         },'phone2': {
-            am: 'Հեռ։ +374.77.788.080',
-            ru: 'Тел. +374.43.470.370',
-            en: 'Tel. +374.77.788.080',
+         },'phone': {
+            am: 'Հեռ։ ',
+            ru: 'Тел. ',
+            en: 'Tel. ',
          },'email': {
             am: 'Էլ․ փոստ։ ',
             ru: 'Эл. Почта: ',
@@ -102,7 +98,7 @@ export const translate = function () {
             en: 'Send',
          },
          'about-info': {
-            am: '"Սիրիուս Լոջիստիկս" ՍՊԸ-ն հիմնադրվել է 2022թ․-ին։ Ընկերության նպատակը իր հաճախորդներին որակյալ լոգիստիկ ծառայությունների մատուցումն է՝ անկախ դրանց տեսակից։',
+            am: '«Սիրիուս Լոջիստիկս» ՍՊԸ-ն հիմնադրվել է 2022թ․-ին։ Ընկերության նպատակը իր հաճախորդներին որակյալ լոգիստիկ ծառայությունների մատուցումն է՝ անկախ դրանց տեսակից։',
             ru: 'ООО «Сириус Лоджистикс» основано в 2022 году. Цель компании – оказать своим клиентам качественные логистические услугы, независимо от их типа.',
             en: `"Sirius Logistics" LLC was founded in 2022. The company's goal is to provide its customers quality logistic services, regardless of their type.`,
          }, 'road-cargo-info1': {
@@ -153,7 +149,7 @@ export const translate = function () {
             ru: 'Авиаперевозки — идеальное решение, когда скорость важнее всего. Среди преимуществ авиаперевозок также высокий уровень безопасности, четкость дат отправления и прибытия.',
             en: 'Air transportation is the ideal solution when speed is the primary concern. Among the advantages of air cargo transportation are also the high level of security, clarity of departure and arrival dates.',
          }, 'air-cargo-info2': {
-            am: '“Սիրիուս Լոջիստիկս”-ն իրականացնում է օդային բեռնափոխադրումներ բոլոր ուղղություններով «դռնից դուռ» կամ «օդանավակայանից օդանավակայան» պայմաններով, որոնք ներառում են այնպիսի բեռների փոխադրում, ինչպիսիք են.',
+            am: '«Սիրիուս Լոջիստիկս»-ն իրականացնում է օդային բեռնափոխադրումներ բոլոր ուղղություններով «դռնից դուռ» կամ «օդանավակայանից օդանավակայան» պայմաններով, որոնք ներառում են այնպիսի բեռների փոխադրում, ինչպիսիք են.',
             ru: '«Сириус Лоджистикс» осуществляет авиаперевозки грузов по всем направлениям на условиях «от двери до двери» или «аэропорт-аэропорт», которые включают перевозку таких грузов, как:',
             en: 'Sirius Logistics carries out air cargo transportation in all directions on "door-to-door" or "airport-to-airport" terms, which include the transportation of such cargo as:',
          }, 'air-cargo-info3': {
@@ -189,7 +185,7 @@ export const translate = function () {
             ru: `• LCL(Less than Container Load) или сборный груз - когда вместе с вашим грузом в контейнере перевозится грузы от других грузоотправителей.`,
             en: `• LCL (Less than Container Load) or collective cargo - when cargo from other shippers is transported in the container along with your cargo.`,
          }, 'costums-clearance-info1': {
-            am: `“Սիրիուս Լոջիստիկս”-ը մատուցում է մաքսային ձևակերպումների(բրոկերային) ծառայություններ բեռների ներմուծման, արտահանման,
+            am: `«Սիրիուս Լոջիստիկս»-ը մատուցում է մաքսային ձևակերպումների(բրոկերային) ծառայություններ բեռների ներմուծման, արտահանման,
                   ինչպես նաև տրանզիտ փոխադրման ժամանակ:`,
             ru: `«Сириус Лоджистикс» оказывает услуги по таможенному оформлению (брокерские) при импорте, экспорте и транзитных перевозках грузов.`,
             en: `Sirius Logistics provides customs clearance (brokerage) services during cargo import, export, and transit transportation.`,

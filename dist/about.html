@@ -10,7 +10,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet">
-      <link rel="shortcut icon" href="../../img/faviconSirius.jpg" type="image/x-icon">
+      <link rel="shortcut icon" href="img/faviconSirius.jpg" type="image/x-icon">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
                <use xlink:href="img/icons/sprite.svg#phone"></use>
             </svg>
             <div class="top-navbar__phone__texts">
-               <h1 class="top-navbar__phone-number">+374 43 470 370</h1>
+               <h1 class="top-navbar__phone-number">+374 77 800 215</h1>
             </div>
          </div>
          <div class="top-navbar__phone-item">
@@ -33,7 +33,7 @@
                <use xlink:href="img/icons/sprite.svg#phone"></use>
             </svg>
             <div class="top-navbar__phone__texts">
-               <h1 class="top-navbar__phone-number">+374 77 78 80 80</h1>
+               <h1 class="top-navbar__phone-number">+374 43 470 370</h1>
             </div>
          </div>
       </div>
@@ -98,11 +98,11 @@
          <h1 class="info-block__title title" data-lang="about-us">Մեր մասին</h1>
          <div class="info-block__wrapper">
             <div class="info-block__img-block">
-               <img src="img/1.jpg" alt="" class="info-block__img">
+               <img src="img/about.jpg" alt="" class="info-block__img">
             </div>
             <div class="info-block_text-block">
                <p class="info-block-text" data-lang="about-info">
-                  "Սիրիուս Լոջիստիկս" ՍՊԸ-ն հիմնադրվել է 2022թ․-ին։ Ընկերության նպատակը իր հաճախորդներին որակյալ լոգիստիկ
+                  «Սիրիուս Լոջիստիկս» ՍՊԸ-ն հիմնադրվել է 2022թ․-ին։ Ընկերության նպատակը իր հաճախորդներին որակյալ լոգիստիկ
                   ծառայությունների
                   մատուցումն է՝ անկախ դրանց տեսակից։
                </p>
@@ -117,33 +117,63 @@
       </div>
       <div class="footer__map-col">
          <iframe
-   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1524.2717802824693!2d44.491966792167176!3d40.174715204907606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abc53048b81b9%3A0x7f1708efe654d4c6!2zQmFyZHpyIEJlcmQgU3QsIFllcmV2YW4sINCQ0YDQvNC10L3QuNGP!5e0!3m2!1sru!2sus!4v1663964950460!5m2!1sru!2sus"
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.548867194072!2d44.49323831462526!3d40.17459707825518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a8ded8cc139735d!2zNDDCsDEwJzI4LjUiTiA0NMKwMjknNDMuNSJF!5e0!3m2!1sru!2s!4v1664139322297!5m2!1sru!2s"
    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
    referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+
       </div>
       <div class="footer__contacts-col">
          <div class="contacts-box">
    <p class="contacts-text company-name" data-lang="company-name">Սիրիուս Լոջիստիկս ՍՊԸ</p>
    <p class="contacts-text addres-text" data-lang="address">ՀՀ, ք․ Երևան, 0082, Բարձրաբերդի 27/1</p>
-   <p class="contacts-text phone-text" data-lang="phone1">Հեռ։ +374․43․470․370</p>
-   <p class="contacts-text phone-text" data-lang="phone2">Հեռ։ +374.77.788.080</p>
+   <p class="contacts-text phone-text" ><span data-lang="phone">Հեռ։ </span>+374․77․800․215</p>
+   <p class="contacts-text phone-text" ><span data-lang="phone">Հեռ։ </span>+374․43․470․370</p>
    <p class="contacts-text email-text"><span data-lang="email">Էլ․ փոստ։</span> <a
-         href="mailto:a.kareyan@siriuslogistics.am" target="_blank" class="email-link">a.kareyan@siriuslogistics.am</a>
+         href="mailto:office@siriuslogistics.am" target="_blank" class="email-link">office@siriuslogistics.am</a>
    </p>
    <p class="contacts-text work-time" data-lang="work-time">Աշխ․ ժամեր։ Երկ․-Ուրբ․։ 09։00-18։00</p>
 </div>
       </div>
       <div class="footer__form-col">
-         <form action="" class="form" id="send-mail-form" >
+         <form action="./php/sendMail.php"  method="POST" class="form" id="send-mail-form" >
    <label for="name" class="label" data-lang="name">Անուն*</label>
-   <input type="text" id="name" name="name" class="field name-field">
+   <input type="text" id="name" name="name" class="field name-field" required>
    <label for="email" class="label" data-lang="email">Էլ. փոստի հասցե*</label>
-   <input type="email" id="email" name="email" class="field email-field">
+   <input type="email" id="email" name="email" class="field email-field" required>
    <label for="message" id="message"  class="label" data-lang="message">Հաղորդագրություն</label>
-   <textarea class="message-field" name="message"></textarea>
+   <textarea class="message-field" name="message" required></textarea>
    <button class="submit-btn" data-lang="submit-btn"  type="submit">Ուղարկել</button>
 </form>
+
+<div class="popup ">
+    <div class="popup__backdrop">
+        <div class="popup__window">
+            <div class="popup__wrapper">
+                <div class="popup__success popup__content ">
+                    <svg class="popup__icon popup__success-icon">
+                        <use xlink:href="img/icons/sprite.svg#check"></use>
+                    </svg>
+                    <h3 class="popup__text popup__success-text" >Сообщение успешно отправлено!</h3>
+                </div>
+                <div class="popup__fail popup__content">
+                    <svg class="popup__icon popup__fail-icon">
+                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                    </svg>
+                    <h3 class="popup__text popup__fail-text">Ошыбка отправки!</h3>
+            </div>
+            <div class="popup__loading popup__content  ">
+                <div class="popup__loading-anim"></div>
+        </div>
+                <button class="popup__close-btn">
+                    <svg class="popup__close-icon">
+                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
       </div>
    </div>
 </footer>

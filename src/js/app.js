@@ -1,13 +1,17 @@
 import * as flsFunctions from './modules/testWebp.js';
-import {translate} from './modules/translate.js'
-import { activeNavLinks } from './modules/activeNavLinks.js'
+import {
+  translate
+} from './modules/translate.js'
+import {
+  activeNavLinks
+} from './modules/activeNavLinks.js'
 
 
 // check webp
 flsFunctions.isWebp();
 
 // make active nav links function
-window.addEventListener('DOMContentLoaded',() => {
+window.addEventListener('DOMContentLoaded', () => {
   activeNavLinks('.main-navbar__link');
   activeNavLinks('.burger-menu__link');
 })
@@ -33,6 +37,41 @@ translate()
 
 const form = document.querySelector('#send-mail-form');
 
+let isLoading = false;
+
+const popup = document.querySelector('.popup')
+const popupSuccess = document.querySelector('.popup__success')
+const popupFail = document.querySelector('.popup__fail')
+const popupLoading = document.querySelector('.popup__loading')
+const popupBtn = document.querySelector('.popup__close-btn')
+const popupBackdrop = document.querySelector('.popup__backdrop')
+const popupActiveClass = 'popup__active'
+const popupContentActiveClass = 'popup__content_active'
+
+const classChange = function(element,activeClass,isRemove){
+  isRemove ? element.classList.remove(activeClass) : element.classList.add(activeClass)
+}
+
+const closePopup = function() {
+  classChange(popup,popupActiveClass,true)
+  classChange(popupLoading,popupContentActiveClass,true)
+  classChange(popupFail,popupContentActiveClass,true)
+  classChange(popupSuccess,popupContentActiveClass,true)
+
+}
+
+popupBtn.addEventListener('click', ()=>{
+  closePopup()
+})
+
+popupBackdrop.addEventListener('click', (e)=>{
+  if(e.currentTarget == e.target){
+    closePopup()
+
+  }
+})
+
+// Fetch send
 
 form.addEventListener('submit', e => {
   sendToMail(e)
@@ -41,103 +80,29 @@ form.addEventListener('submit', e => {
 const sendToMail = async function (e) {
   e.preventDefault();
   const formData = new FormData(form)
+  debugger
+  classChange(popup,popupActiveClass,false)
+  classChange(popupLoading,popupContentActiveClass,false)
 
-  let response = await fetch('php/sendMail.php', {
-    method: 'POST',
-    body: formData
-  });
-  if (response.ok) {
-    let result = await response.json();
-    alert(result.message);
-    formPreview.innerHTML = '';
-    form.reset();
-  } else {
-    alert("Ошибка");
+  try {
+
+    let response = await fetch('./php/sendMail.php', {
+      method: 'post',
+      body: formData
+    });
+    if (response.ok) {
+      let result = await response.json();
+  classChange(popupLoading,popupContentActiveClass,true)
+  classChange(popupSuccess,popupContentActiveClass,false)
+      
+      form.reset();
+    } else {
+  classChange(popupLoading,popupContentActiveClass,true)
+  classChange(popupFail,popupContentActiveClass,false)
+    }
+  } catch (error) {
+    console.log(error)
+  classChange(popupLoading,popupContentActiveClass,true)
+  classChange(popupFail,popupContentActiveClass,false)
   }
 }
-
-// // Send messenge to gmail
-
-// const form = document.forms["form"];
-// const formArr = Array.from(form);
-// const validFormArr = [];
-// const button = form.elements["button"];
-
-// formArr.forEach((el) => {
-//   if (el.hasAttribute("data-reg")) {
-//     el.setAttribute("is-valid", "0");
-//     validFormArr.push(el);
-//   }
-// });
-
-// form.addEventListener("input", inputHandler);
-// form.addEventListener("submit", formCheck);
-
-// function inputHandler({target}) {
-//   if (target.hasAttribute("data-reg")) {
-//     inputCheck(target);
-//   }
-// }
-
-// function inputCheck(el) {
-//   const inputValue = el.value;
-//   const inputReg = el.getAttribute("data-reg");
-//   const reg = new RegExp(inputReg);
-//   if (reg.test(inputValue)) {
-//     el.setAttribute("is-valid", "1");
-//     el.style.border = "2px solid rgb(0, 196, 0)";
-//   } else {
-//     el.setAttribute("is-valid", "0");
-//     el.style.border = "2px solid rgb(255, 0, 0)";
-//   }
-// }
-
-// function formCheck(e) {
-//   e.preventDefault();
-//   const allValid = [];
-//   validFormArr.forEach((el) => {
-//     allValid.push(el.getAttribute("is-valid"));
-//   });
-//   const isAllValid = allValid.reduce((acc, current) => {
-//     return acc && current;
-//   });
-//   if (!Boolean(Number(isAllValid))) {
-//     alert("Заполните поля правильно!");
-//     return;
-//   }
-//   formSubmit();
-// }
-
-
-// // async
-
-// async function formSubmit() {
-//   const data = serializeForm(form);
-//   const response = await sendData(data);
-//   if (response.ok) {
-//     let result = await response.json();
-//     alert(result.message);
-//     formReset();
-//   } else {
-//     alert("Код ошибки: " + response.status);
-//   }
-// }
-
-// function serializeForm(formNode) {
-//   return new FormData(form);
-// }
-
-// async function sendData(data) {
-//   return await fetch("send_mail.php", {
-//     method: "POST",
-//     body: data,
-//   });
-// }
-
-// function formReset() {
-//   form.reset();
-//   validFormArr.forEach((el) => {
-//     el.setAttribute("is-valid", 0);
-//     el.style.border = "none";
-//   });
-// }
