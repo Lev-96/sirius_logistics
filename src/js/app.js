@@ -31,18 +31,8 @@ openMobileMenuBtn.addEventListener('click', () => {
 translate()
 // ***************
 
-const form = document.querySelector('#send-mail-form'),
-      inputs = form.querySelectorAll('.field,.message-field'),
-      nameInp = form.querySelector('#name'),
-      emailInp = form.querySelector('#name'),
-      messageInp = form.querySelector('#name'),
-      formData = {}
+const form = document.querySelector('#send-mail-form');
 
-inputs.forEach(inp => {
-  inp.addEventListener('input', (e) => {
-    formData[e.target.name] = e.target.value
-  })
-})
 
 form.addEventListener('submit', e => {
   sendToMail(e)
@@ -50,6 +40,8 @@ form.addEventListener('submit', e => {
 
 const sendToMail = async function (e) {
   e.preventDefault();
+  const formData = new FormData(form)
+
   let response = await fetch('php/sendMail.php', {
     method: 'POST',
     body: formData
