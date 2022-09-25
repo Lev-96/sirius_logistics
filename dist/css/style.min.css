@@ -432,6 +432,11 @@
   border-top: 0;
   border-bottom: 1px solid #3cc0f0;
 }
+@media (max-width: 960px) {
+  .info-block__line {
+    margin: 25px auto;
+  }
+}
 .info-block__img-block {
   width: 100%;
 }
@@ -525,6 +530,7 @@
 
 .message-field {
   min-height: 100px;
+  max-height: 200px;
 }
 
 .submit-btn {

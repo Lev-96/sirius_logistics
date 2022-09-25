@@ -17,6 +17,10 @@
       margin: 25px 0;
       border-top: 0;
       border-bottom: 1px solid $blue-clr;
+
+      @include for-tablet{
+      margin: 25px auto;
+      }
    }
    
    &__img-block {
