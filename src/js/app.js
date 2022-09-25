@@ -80,7 +80,6 @@ form.addEventListener('submit', e => {
 const sendToMail = async function (e) {
   e.preventDefault();
   const formData = new FormData(form)
-  debugger
   classChange(popup,popupActiveClass,false)
   classChange(popupLoading,popupContentActiveClass,false)
 
@@ -95,7 +94,6 @@ const sendToMail = async function (e) {
   classChange(popupLoading,popupContentActiveClass,true)
   classChange(popupSuccess,popupContentActiveClass,false)
       
-      form.reset();
     } else {
   classChange(popupLoading,popupContentActiveClass,true)
   classChange(popupFail,popupContentActiveClass,false)
@@ -104,5 +102,7 @@ const sendToMail = async function (e) {
     console.log(error)
   classChange(popupLoading,popupContentActiveClass,true)
   classChange(popupFail,popupContentActiveClass,false)
+  } finally {
+    form.reset();
   }
 }
