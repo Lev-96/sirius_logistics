@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
 *:not(i) {
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -339,6 +344,11 @@
   background-size: cover;
   background-attachment: fixed;
   min-height: 500px;
+}
+@media (max-width: 480px) {
+  .header__bgImages {
+    background-size: contain;
+  }
 }
 
 .our-services__big-title {
