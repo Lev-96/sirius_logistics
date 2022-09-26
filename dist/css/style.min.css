@@ -344,6 +344,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   min-height: 500px;
+  height: 100vh;
 }
 @media (max-width: 480px) {
   .header__bgImages {
