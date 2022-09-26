@@ -1,3 +1,7 @@
+.contact-info-block__wrapper {
+   align-items: flex-start!important;
+}
+
 .info-block {
    margin: 60px 0;
 
@@ -18,19 +22,19 @@
       border-top: 0;
       border-bottom: 1px solid $blue-clr;
 
-      @include for-tablet{
-      margin: 25px auto;
+      @include for-tablet {
+         margin: 25px auto;
       }
    }
-   
+
    &__img-block {
       width: 100%;
    }
-   
+
    &__img {
       width: 100%;
    }
-   
+
    &__text-block {
       width: 100%;
 
@@ -38,17 +42,18 @@
          width: auto
       }
    }
-   
+
    &-text {
-      @include set-font(16px,300);
+      @include set-font(16px, 300);
       line-height: 1.55;
       margin-bottom: 10px;
+      text-indent: 15px;
    }
-   
+
    &__list {
       margin-left: 15px;
    }
-   
+
    &__list-item {
       list-style: none;
       margin-bottom: 15px;

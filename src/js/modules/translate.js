@@ -113,22 +113,22 @@ export const translate = function () {
             ru: `География сухопутных грузаперевозок.`,
             en: `Geography of road cargo transportation.`,
          },'road-cargo-info3': {
-            am: `• ավտոմոբիլային բեռնափոխադրումներ դեպի ՌԴ, ԱՊՀ երկրներ և հակառակ ուղղությամբ`,
-            ru: `• автомобильные грузоперевозки в РФ, страны СНГ и в обратном направлении`,
-            en: `• road transportation to the Russian Federation, CIS countries and in the opposite direction
+            am: `• Ավտոմոբիլային բեռնափոխադրումներ դեպի ՌԴ, ԱՊՀ երկրներ և հակառակ ուղղությամբ`,
+            ru: `• Автомобильные грузоперевозки в РФ, страны СНГ и в обратном направлении`,
+            en: `• Road transportation to the Russian Federation, CIS countries and in the opposite direction
 `,
          },'road-cargo-info4': {
-            am: `• ավտոմոբիլային բեռնափոխադրումներ դեպի Եվրոպա և հակառակ ուղղությամբ`,
-            ru: `• автомобильные грузоперевозки в и из Европы`,
-            en: `• road transportation to and from Europe
+            am: `• Ավտոմոբիլային բեռնափոխադրումներ դեպի Եվրոպա և հակառակ ուղղությամբ`,
+            ru: `• Автомобильные грузоперевозки в и из Европы`,
+            en: `• Road transportation to and from Europe
 `,
          },'road-cargo-info5': {
-            am: `• ներքին բեռնափոխադրումներ Հայաստանի տարածքում`,
-            ru: `• внутренние грузоперевозки по территории Армении`,
-            en: `• internal cargo transportation in the territory of Armenia
+            am: `• Ներքին բեռնափոխադրումներ Հայաստանի տարածքում`,
+            ru: `• Внутренние грузоперевозки по территории Армении`,
+            en: `• Internal cargo transportation in the territory of Armenia
 `,
          }, 'road-cargo-info6': {
-            am: `Մեր կողմից առաջարկվող ցամաքային բեռնափոխադրման ծառայությունները ներառում են`,
+            am: `Մեր կողմից առաջարկվող ցամաքային բեռնափոխադրման ծառայությունները ներառում են.`,
             ru: `Предлагаемые нами услуги по сухопутным перевозкам включают в себя:`,
             en: `Our road cargo services include:`,
          },'road-cargo-info7': {
@@ -140,12 +140,12 @@ export const translate = function () {
             ru: `• Грузовые перевозки, требующие тепловой режим`,
             en: `• Loads requiring thermal regime`,
          },'road-cargo-info9': {
-            am: `• Ջերմային ռեժիմ պահանջող բեռներ`,
+            am: `• Վտանգավոր բեռների(ADR) փոխադրում`,
             ru: `• Перевозка опасных грузов (ADR)`,
             en: `• Transportation of dangerous goods (ADR)`,
          },
          'air-cargo-info1': {
-            am: 'Օդային բեռնափոխադրումներն իդեալական լուծում են այն պարագայում, երբ առաջնային խնդիրն արագությունն է:Օդային բեռնափոխադրման առավելություններից են նաև անվտանգության բարձր մակարդակը, մեկնման և ժամանման ժամկետների հստակությունը:',
+            am: 'Օդային բեռնափոխադրումներն իդեալական լուծում են այն պարագայում, երբ առաջնային խնդիրն արագությունն է: Օդային բեռնափոխադրման առավելություններից են նաև անվտանգության բարձր մակարդակը, մեկնման և ժամանման ժամկետների հստակությունը:',
             ru: 'Авиаперевозки — идеальное решение, когда скорость важнее всего. Среди преимуществ авиаперевозок также высокий уровень безопасности, четкость дат отправления и прибытия.',
             en: 'Air transportation is the ideal solution when speed is the primary concern. Among the advantages of air cargo transportation are also the high level of security, clarity of departure and arrival dates.',
          }, 'air-cargo-info2': {
@@ -169,7 +169,7 @@ export const translate = function () {
             ru: '• Дорогие грузы',
             en: '• Expensive cargo',
          },'sea-freight-info1': {
-            am: `Ծովային բեռնափոխադրումը ամբողջ աշխարհում ապրանքների տեղափոխման ամենահին և շահավետ տարբերակներից է: Տարբեր հաշվարկներով՝ աշխարհում փոխադրվող ապրանքների ավելի քան 90%-ը տեղափոխվում են ծովային բեռնափոխադրման միջոցով։`,
+            am: `Ծովային բեռնափոխադրումը ամբողջ աշխարհում ապրանքների տեղափոխման ամենահին և շահավետ տարբերակներից է: Տարբեր հաշվարկներով աշխարհում փոխադրվող ապրանքների ավելի քան 90%-ը տեղափոխվում են ծովային բեռնափոխադրման միջոցով։`,
             ru: `Морские грузаперевозки — один из старейших и наиболее выгодных вариантов перемещения грузов по всему миру. По разным оценкам, более 90% грузов, перевозимых в мире, перевозится морским транспортом.`,
             en: `Sea shipping  is one of the oldest and most profitable options for moving goods around the world. According to various estimates, more than 90% of goods transported in the world are transported by sea.`,
          }, 'sea-freight-info2': {
@@ -177,7 +177,7 @@ export const translate = function () {
             ru: `Мы предлагаем морские перевозки по следующими вариантами:`,
             en: `We offer sea freight services with the following options:`,
          },'sea-freight-info3': {
-            am: `• FCL(Կոնտեյների ամբողջական բեռնում)-երբ կոնտեյները բեռնված է մեկ ուղարկողի կողմից և շարժվում է մեկ ստացողի հասցեով՝ անկախ բեռի չափից: ուղղությամբ`,
+            am: `• FCL(Կոնտեյների ամբողջական բեռնում)-երբ կոնտեյները բեռնված է մեկ ուղարկողի կողմից և շարժվում է մեկ ստացողի հասցեով՝ անկախ բեռի չափից:`,
             ru: `• FCL(Full Container Load) – когда контейнер загружается одним грузоотправителем и движется по одному адресу грузополучателя, независимо от размера груза.`,
             en: `• FCL (Full Container Load) - when a container is loaded by a single shipper and moves to a single consignee address, regardless of cargo size.`,
          }, 'sea-freight-info4': {
@@ -185,7 +185,7 @@ export const translate = function () {
             ru: `• LCL(Less than Container Load) или сборный груз - когда вместе с вашим грузом в контейнере перевозится грузы от других грузоотправителей.`,
             en: `• LCL (Less than Container Load) or collective cargo - when cargo from other shippers is transported in the container along with your cargo.`,
          }, 'costums-clearance-info1': {
-            am: `«Սիրիուս Լոջիստիկս»-ը մատուցում է մաքսային ձևակերպումների(բրոկերային) ծառայություններ բեռների ներմուծման, արտահանման,
+            am: `«Սիրիուս Լոջիստիկս»-ը մատուցում է մաքսային ձևակերպումների (բրոկերային) ծառայություններ բեռների ներմուծման, արտահանման,
                   ինչպես նաև տրանզիտ փոխադրման ժամանակ:`,
             ru: `«Сириус Лоджистикс» оказывает услуги по таможенному оформлению (брокерские) при импорте, экспорте и транзитных перевозках грузов.`,
             en: `Sirius Logistics provides customs clearance (brokerage) services during cargo import, export, and transit transportation.`,
@@ -194,47 +194,43 @@ export const translate = function () {
             ru: `Предоставляемые услуги включают в себя:`,
             en: `Provided services include:`,
          }, 'costums-clearance-info3': {
-            am: `• մաքսային փաստաթղթերի կազմում`,
-            ru: `• подготовка таможенных документов`,
-            en: `• preparation of customs documents`,
+            am: `• Մաքսային փաստաթղթերի կազմում`,
+            ru: `• Подготовка таможенных документов`,
+            en: `• Preparation of customs documents`,
          }, 'costums-clearance-info4': {
-            am: `• հավաստագրերի, լիցենզիաների, թույլտվությունների և այլ փաստաթղթերի ձևակերպում`,
-            ru: `• оформление сертификатов, лицензий, разрешений и других документов`,
-            en: `• drafting of certificates, licenses, permits and other documents`,
+            am: `• Հավաստագրերի, լիցենզիաների, թույլտվությունների և այլ փաստաթղթերի ձևակերպում`,
+            ru: `• Оформление сертификатов, лицензий, разрешений и других документов`,
+            en: `• Drafting of certificates, licenses, permits and other documents`,
          }, 'costums-clearance-info5': {
-            am: `• ներմուծման, արտահանման և տրանզիտ փոխադրման հայտարարագրերի ձևակերպում և ներկայացում մաքսային ծառայություն,`,
-            ru: `• оформление и подача импортных, экспортных и транзитных транспортных деклараций в таможенную службу`,
-            en: `• formulation and submission of import, export and transit transport declarations to the customs service,`,
+            am: `• Ներմուծման, արտահանման և տրանզիտ փոխադրման հայտարարագրերի ձևակերպում և ներկայացում մաքսային ծառայություն`,
+            ru: `• Оформление и подача импортных, экспортных и транзитных транспортных деклараций в таможенную службу`,
+            en: `• Formulation and submission of import, export and transit transport declarations to the customs service,`,
          }, 'costums-clearance-info6': {
-            am: `• մաքսային պահեստից փաստաթղթերի ստացում`,
-            ru: `• получение документов с таможенного склада`,
-            en: `• receipt of documents from the customs warehouse`,
+            am: `• Մաքսային պահեստից փաստաթղթերի ստացում`,
+            ru: `• Получение документов с таможенного склада`,
+            en: `• Receipt of documents from the customs warehouse`,
          }, 'costums-clearance-info7': {
-            am: `• ապրանքների ֆիզիկական և մաքսային զննման ապահովում`,
-            ru: `• обеспечение физического и таможенного досмотра товаров`,
-            en: `• provision of physical and customs inspection of goods`,
+            am: `• Ապրանքների ֆիզիկական և մաքսային զննման ապահովում`,
+            ru: `• Обеспечение физического и таможенного досмотра товаров`,
+            en: `• Provision of physical and customs inspection of goods`,
          }, 'backup-services-info1': {
-            am: `Մենք առաջարկում ենք նաև պահեստային ծառայություններ Հայաստանում և Հայաստանից դուրս: Մեր գործընկերների պահեստները թույլ են
-               տալիս կատարել այնպիսի գործողություններ, ինչպիսիք են.`,
+            am: `Մենք առաջարկում ենք նաև պահեստային ծառայություններ Հայաստանում և Հայաստանից դուրս: Մեր գործընկերների պահեստները թույլ են տալիս կատարել այնպիսի գործողություններ, ինչպիսիք են.`,
             ru: `Мы также предлагаем складские услуги в Армении и за ее пределами. Склады наших партнеров позволяют выполнять такие действия, как:`,
             en: `We also offer warehousing services in Armenia and outside of Armenia. Warehouses of our partners allow you to perform such actions as:`,
          }, 'backup-services-info2': {
-            am: `• բարձման և բեռնաթափման աշխատանքներ`,
-            ru: `• погрузочно-разгрузочные работы`,
-            en: `• loading and unloading operations`,
+            am: `• Բարձման և բեռնաթափման աշխատանքներ`,
+            ru: `• Погрузочно-разгрузочные работы`,
+            en: `• Loading and unloading operations`,
          }, 'backup-services-info3': {
-            am: `• ապրանքների պատասխանատու պահպանություն`,
-            ru: `• ответственное хранение продукции`,
-            en: `• responsible storage of goods`,
+            am: `• Ապրանքների պատասխանատու պահպանություն`,
+            ru: `• Ответственное хранение продукции`,
+            en: `• Responsible storage of goods`,
          }, 'backup-services-info4': {
-            am: `• բեռների փաթեթավորում և կոմպլեկտավորում`,
-            ru: `• упаковка и сборка груза`,
-            en: `• packing and assembling of cargo`,
+            am: `• Բեռների փաթեթավորում և կոմպլեկտավորում`,
+            ru: `• Упаковка и сборка груза`,
+            en: `• Packing and assembling of cargo`,
          }, 'groupage-cargo-info1': {
-            am: `Հավաքական բեռնափոփադրումները իրենց մատչելիության և հարմարավետության շնորհիվ այսօր աշխարհում շատ պահանջված են: Դրանք
-                  թույլ են տալիս կրճատել տրանսպորտային ծախսերը: Բեռների կոնսոլիդացիան սովորաբար տեղի է ունենում հիմնական ճանապարհներին մոտ
-                  գտնվող պահեստներում, որտեղ մեկ տրանսպորտային միջոցի մեջ հավաքվում են տարբեր ստացողների բեռներ: Մենք առաջարկում ենք
-                  հավաքական բեռների փոխադրումներ.`,
+            am: `Հավաքական բեռնափոփադրումները իրենց մատչելիության և հարմարավետության շնորհիվ այսօր աշխարհում շատ պահանջված են: Դրանք թույլ են տալիս կրճատել տրանսպորտային ծախսերը: Բեռների կոնսոլիդացիան սովորաբար տեղի է ունենում հիմնական ճանապարհներին մոտ գտնվող պահեստներում, որտեղ մեկ տրանսպորտային միջոցի մեջ հավաքվում են տարբեր ստացողների բեռներ: Մենք առաջարկում ենք հավաքական բեռների փոխադրումներ.`,
             ru: `Благодаря своей доступности и удобству сборные грузаперевозки сегодня пользуются большим спросом в мире. Они позволяют снизить транспортные расходы. Консолидация грузов обычно происходит на складах вблизи основных дорог, где грузы от разных грузополучателей объединяются в одно транспортное средство. Мы предлагаем сборные грузоперевозки.:`,
             en: `Due to their affordability and convenience, groupage transportation services are in high demand in the world today. They allow to reduce transportation costs. Consolidation of loads usually takes place in warehouses close to main roads, where loads from different consignees are combined into one truck or container. We offer groupage cargo transportation`,
          },'groupage-cargo-info2': {
@@ -246,7 +242,7 @@ export const translate = function () {
             ru: `• Из Европы`,
             en: `• From Europe`,
          },'groupage-cargo-info4': {
-            am: `• Չինաստանիցy`,
+            am: `• Չինաստանից`,
             ru: `• Из Китая`,
             en: `• From China`,
          },'groupage-cargo-info5': {

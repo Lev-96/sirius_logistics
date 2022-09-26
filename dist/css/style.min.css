@@ -422,6 +422,10 @@
   text-transform: uppercase;
 }
 
+.contact-info-block__wrapper {
+  align-items: flex-start !important;
+}
+
 .info-block {
   margin: 60px 0;
 }
@@ -467,6 +471,7 @@
   color: #000000;
   line-height: 1.55;
   margin-bottom: 10px;
+  text-indent: 15px;
 }
 .info-block__list {
   margin-left: 15px;
