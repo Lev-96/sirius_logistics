@@ -339,7 +339,7 @@ a {
 }
 .header__bgImages {
   background-image: url("../img/header.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -348,6 +348,8 @@ a {
 @media (max-width: 480px) {
   .header__bgImages {
     background-size: contain;
+    background-position: center;
+    min-height: 300px;
   }
 }
 
