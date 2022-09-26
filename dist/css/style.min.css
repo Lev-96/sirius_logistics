@@ -568,6 +568,7 @@
 }
 
 .popup {
+  width: 100%;
   display: none;
 }
 .popup__active {
