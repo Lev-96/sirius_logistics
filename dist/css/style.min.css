@@ -37,24 +37,6 @@
   height: 59px;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=number],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
 .top-navbar {
   background: #fff;
 }
@@ -586,6 +568,7 @@ html {
 }
 
 .popup {
+  width: 100%;
   display: none;
 }
 .popup__active {

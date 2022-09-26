@@ -36,22 +36,3 @@
    width: 100px;
    height: 59px;
 }
-
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-textarea {
-    -webkit-appearance : none;
-    -moz-appearance    : none;
-    -ms-appearance     : none;
-    appearance         : none;
-    outline            : 0;
-    box-shadow         : none;
-}
-
-html {
-   -webkit-text-size-adjust : 100%;
-   text-size-adjust         : 100%
-}
