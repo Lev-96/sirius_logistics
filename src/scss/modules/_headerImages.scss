@@ -10,8 +10,7 @@
         min-height:500px;
 
         @include for-phone {
-            background-position: top;
-            background-size: auto;
+            background-attachment: scroll;
         }
     }
 }

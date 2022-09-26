@@ -35,7 +35,11 @@
    color: #fff;
    font-size: 18px;
    display: block;
-
+   border-radius: 4px;
+   transition: all .3s;
+   &:hover{
+   background-color: #039ed7;
+   }
    @include for-min-tablet {
       margin: 0 auto;
    }

@@ -347,8 +347,7 @@ a {
 }
 @media (max-width: 480px) {
   .header__bgImages {
-    background-position: top;
-    background-size: auto;
+    background-attachment: scroll;
   }
 }
 
@@ -552,6 +551,11 @@ a {
   color: #fff;
   font-size: 18px;
   display: block;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.submit-btn:hover {
+  background-color: #039ed7;
 }
 @media (max-width: 640px) {
   .submit-btn {
