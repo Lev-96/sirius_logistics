@@ -254,6 +254,15 @@ export const translate = function () {
             ru: `При необходимости предлагаем оформление сопроводительных таможенных документов (Ex1, Т1 и др.).`,
             en: `If necessary, we offer drafting of accompanying customs documents (Ex1, T1, etc.).`,
          },
+         'popup-success': {
+            am: `Հաղորդագրությունը հաջողությամբ ուղարկվեց`,
+            ru: `Сообщение успешно отправлено`,
+            en: `Message successfully sent`,
+         }, 'popup-fail': {
+            am: `Ուղարկման սխալ`,
+            ru: `Ошыбка отправки`,
+            en: `Sending error`,
+         },
       };
 
    // CHANGE LANGUAGE FUNCTION
