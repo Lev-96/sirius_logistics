@@ -347,9 +347,8 @@ a {
 }
 @media (max-width: 480px) {
   .header__bgImages {
-    background-size: contain;
     background-position: center;
-    min-height: 300px;
+    min-height: 350px;
   }
 }
 
