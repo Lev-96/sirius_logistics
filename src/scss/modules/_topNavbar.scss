@@ -35,8 +35,8 @@
    }
 
    &__logo-icon {
-      width: 100px;
-      height: 59px;
+      width: 150px;
+      height: 89px;
    }
 
    &__phone-block {
@@ -60,6 +60,11 @@
 
    &__phone-number {
       @include set-font(26px, 700)
+   }
+
+   &__phone-link {
+      color: #000;
+      text-decoration: none;
    }
 
    &__phone-city {

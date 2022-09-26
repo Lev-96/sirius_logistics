@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none !important;
-  color: #000 !important;
-}
-
 *:not(i) {
   font-family: "Roboto", Arial, sans-serif;
 }
@@ -79,8 +74,8 @@ a {
   }
 }
 .top-navbar__logo-icon {
-  width: 100px;
-  height: 59px;
+  width: 150px;
+  height: 89px;
 }
 .top-navbar__phone-block {
   display: flex;
@@ -108,6 +103,10 @@ a {
 .top-navbar__phone-number {
   font: 700 26px "Roboto", Arial, sans-serif;
   color: #000000;
+}
+.top-navbar__phone-link {
+  color: #000;
+  text-decoration: none;
 }
 .top-navbar__phone-city {
   font: 400 14px "Roboto", Arial, sans-serif;
@@ -215,6 +214,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   position: relative;
+  font-weight: bold;
 }
 .main-navbar__link::after {
   content: "";
@@ -222,6 +222,7 @@ a {
   left: 0;
   width: 100%;
   border-bottom: 3px solid #3cc0f0;
+  border-radius: 10px;
   bottom: 15px;
   transition: all 0.5s;
   opacity: 0;

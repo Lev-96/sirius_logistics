@@ -33,6 +33,7 @@
       text-transform: uppercase;
       text-align: center;
       position: relative;
+      font-weight: bold;
    
       &::after{
          content: '';
@@ -40,6 +41,7 @@
          left: 0;
          width: 100%;
          border-bottom: 3px solid $blue-clr;
+         border-radius: 10px;
          bottom: 15px;
          transition: $transition;
          opacity: 0;
