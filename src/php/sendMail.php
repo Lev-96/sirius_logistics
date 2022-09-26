@@ -30,7 +30,7 @@ $body = str_replace('%email%', $email, $body);
 $body = str_replace('%message%', $message, $body);
 
 $mail->addAddress("levonbakunts3@gmail.com");
-$mail->setFrom($email);
+$mail->setFrom($email,$name);
 $mail->Subject = 'Отправка из формы Sirius Logistics'; 
 $mail->MsgHTML($body);
 
