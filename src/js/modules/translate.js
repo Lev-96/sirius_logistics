@@ -292,7 +292,7 @@ export const translate = function () {
    document.querySelector('body').addEventListener('click', (e) => {
       const activeClass = 'top-navbar__lang-dropdown_active';
       if (!langDropdown.classList.contains(activeClass)) {
-         if (e.target === langDropBtn || e.target === langDropBtn.children[0]) {
+         if (e.target === langDropBtn || e.target === langDropBtn.querySelector('img')) {
             langDropdown.classList.add(activeClass)
          }
       } else {
