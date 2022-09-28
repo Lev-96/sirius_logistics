@@ -100,6 +100,11 @@
   transition: all 0.5s;
   margin-right: 10px;
 }
+@media (max-width: 480px) {
+  .top-navbar__phone-icon {
+    fill: #fff;
+  }
+}
 .top-navbar__phone-number {
   font: 700 26px "Roboto", Arial, sans-serif;
   color: #000000;
@@ -107,6 +112,11 @@
 .top-navbar__phone-link {
   color: #000;
   text-decoration: none;
+}
+@media (max-width: 480px) {
+  .top-navbar__phone-link {
+    color: #fff;
+  }
 }
 .top-navbar__phone-city {
   font: 400 14px "Roboto", Arial, sans-serif;
