@@ -5,12 +5,13 @@
         background-image: url("../img/header.jpg");
         background-position: top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
-        min-height:500px;
+        min-height:100vh;
 
-        @include for-phone {
+        @include for-tablet {
             background-attachment: scroll;
+            background-position: center;
         }
     }
 }

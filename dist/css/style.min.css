@@ -352,13 +352,14 @@
   background-image: url("../img/header.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  min-height: 500px;
+  min-height: 100vh;
 }
-@media (max-width: 480px) {
+@media (max-width: 960px) {
   .header__bgImages {
     background-attachment: scroll;
+    background-position: center;
   }
 }
 
